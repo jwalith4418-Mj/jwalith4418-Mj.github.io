@@ -20,7 +20,15 @@ Only `dist` is published. No Git credentials, checkout history, or Sites hosting
 
 ## Vercel deployment
 
+Repository: https://github.com/jwalith4418-Mj/jwalith4418-Mj.github.io
+
+Deployment: https://jwalith-portfolio.vercel.app
+
+The initial deployment completed on 20 October 2026 through the authenticated Vercel CLI. The project is `jwalith-portfolio` in `jwalith4418-2769s-projects`. Vercel could not connect the new GitHub repository, so automatic Git deployments are not enabled yet. To connect them, open the project's Settings > Git and grant the Vercel GitHub integration access to this repository, then connect it. No source credentials belong in this repository.
+
 `vercel.json` publishes only `dist`, uses no framework or dependency installation, and checks project resources during each build. Generated CSS bundles and script fingerprints are committed; run the three editing checks below before pushing changes. A connected Vercel project builds Git pushes automatically; branches can provide previews and the configured production branch provides production deployments.
+
+Until Git integration is connected, deploy updates from this linked directory with `npx vercel deploy --scope jwalith4418-2769s-projects` for a preview. Use `--prod` when intentionally updating the published site.
 
 The `.vercel` account link and local environment files are excluded from Git. Local browser captures are also excluded; the sanitized JSON measurement reports remain available in the repository.
 
