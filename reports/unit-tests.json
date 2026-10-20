@@ -1,0 +1,67 @@
+[
+  {
+    "check": "check-arcade.cjs",
+    "passed": true,
+    "output": "PASS: scoring windows, all three complete games, cooldown/held-key protection, expiry/lives, score bounds, paused clocks, personal bests, keyboard and button controls, theme changes without reset, direct game navigation, cross-tab score refresh, no per-frame storage polling or unchanged score/title rewrites, reduced-motion cues, visibility/blur/back-cache lifecycle, one bounded RAF, canvas fallback and blocked-storage session scores. Sound is off by default; opt-in tones are bounded and mute cancels future tones. UI geometry, canvas and browser APIs mocked."
+  },
+  {
+    "check": "check-audio.cjs",
+    "passed": true,
+    "output": "PASS: audio stays off until opt-in; six distinct bounded sound recipes; adjustable volume and zero-volume silence; mute cancels active voices; hidden-tab, modal, pause and reading-mode suspension/resume; unavailable audio fallback.\nAudioContext is mocked. Actual speaker output, listening quality and native browser autoplay behavior remain unverified."
+  },
+  {
+    "check": "check-character-motion.cjs",
+    "passed": true,
+    "output": "PASS: ten distinct idle profiles, grounded stances, bounded full-figure movement, attention/pointer reactions, distinct actions, full settling and invalid-input handling. This does not verify rendered pixels or joint animation."
+  },
+  {
+    "check": "check-figure-rig.cjs",
+    "passed": true,
+    "output": "PASS: 10 regional rigs; finite non-folding meshes; lazy textures, transform sync, source fallback, context recovery and GPU release.\n{\"minArea\":0.00026359136209617984,\"maxMove\":0.12971502994385328}"
+  },
+  {
+    "check": "check-interactions.cjs",
+    "passed": true,
+    "output": "PASS: 17 project readers; 10 complete articles; gallery/filter/search controls; menu; clipboard; deep links; eight global exposure records and category filters.\nPASS: six heroes in forward/reverse section order; repeated powers; keyboard and pointer drag; drag-click suppression; viewport re-entry; replay; pause/resume; visibility suspension; modal suspension; reading/reduced motion; canvas-unavailable fallback.\nPASS: stronger mouse hover and keyboard focus, touch hover suppression, vertical pointer tracking, drag release and matching figure/effect transforms.\nPASS: six section-wide environments, finite mesh coordinates, full viewport buffers, web pulse and project hover, pause/resume, offscreen buffer release and canvas failure fallback.\nPASS: Thor has no automatic lightning, charges before strike, then finishes the bounded lightning phase.\nPASS: chapter-boundary jitter, monotonic viewport fade, aligned effect opacity, edge re-entry without reveal reset, keyboard/pointer artwork preparation without navigation.\nDOM harness mocks browser geometry, animation frames and canvas. It does not verify pixels, live layout, touch, sound or device FPS."
+  },
+  {
+    "check": "check-mobile-navigation.cjs",
+    "passed": true,
+    "output": "PASS: phone shortcut state, source/gallery mapping, learning/about mapping, portrait/landscape, desktop idle behavior, one bounded queued update, hidden-tab cancellation, disclosure dismissal and both documents. Native touch/layout remains unverified."
+  },
+  {
+    "check": "check-mobile-viewport.cjs",
+    "passed": true,
+    "output": "PASS: visible-height/offset sizing, keyboard-style resize, portrait/landscape, coalesced events, no unchanged writes, pinch zoom, desktop restore, hidden tabs, invalid values and unsupported-API fallback. VisualViewport and browser APIs are mocked; native keyboard/layout unverified."
+  },
+  {
+    "check": "check-panda-chi.cjs",
+    "passed": true,
+    "output": "PASS: four distinct chi powers, finite drawing geometry, bounded draw work, compact DPR including landscape, buffer release/restore, and missing/throwing canvas fallback. Canvas is mocked; appearance and device performance are unverified."
+  },
+  {
+    "check": "check-panda-interactions.cjs",
+    "passed": true,
+    "output": "PASS: eight exposure records, program/certification/experience filters, visible status counts, exposure navigation, project technology chips and gallery progress.\nPASS: four character guides, correct project filters, writing navigation, four-chapter forward/reverse scroll, scene buttons, continue cue, synchronization after manual selection, character actions, Oogway breathing, pause, reading mode and artwork sources.\nPASS: Panda hover/focus attention, touch hover suppression, drag-click suppression, keyboard activation and hidden-tab sprite suspension.\nPASS: dragon mesh submission, dust particles, scroll travel, pointer orbit, energy wake, gallery coupling, pause/resume, hidden-tab suspension, reading mode, context-loss fallback, and WebGL-unavailable fallback.\nPASS: 17 project details; 10 full-text essays; category filters; gallery arrows; searchable index; article navigation; menu; pause; reading mode; scroll scenes; reduced motion; clipboard; deep links.\nVerification uses a lightweight DOM harness with mocked geometry, animation frames, canvas, and browser APIs. It does not verify pixels, native layout, or live browser behavior."
+  },
+  {
+    "check": "check-portfolio-finish.cjs",
+    "passed": true,
+    "output": "PASS: all 17 project stories, concept evidence boundaries, settings dismissal/focus/mode/sound status, and twenty-three text contrast pairs. Native rendering and accessibility remain unverified."
+  },
+  {
+    "check": "check-project-evidence.cjs",
+    "passed": true,
+    "output": "PASS: real SHA-256 browser-demo algorithm detects text/link tampering; canonical key ordering, unsupported crypto, water bounds, interval witnesses and explicit evidence limits. These are illustrative browser examples, not full application validation."
+  },
+  {
+    "check": "check-resources.cjs",
+    "passed": true,
+    "output": "PASS: 17 project schemas, resource paths, protocol rejection, escaped status text and original Blackbox artifact fingerprints."
+  },
+  {
+    "check": "check-theme-switch.cjs",
+    "passed": true,
+    "output": "PASS: two-way switching, preference and explicit override, same-origin routing, section/progress restoration, deep links, rapid clicks, modifier clicks, blocked storage, reduced motion, reading/pause transfer, input/focus cancellation, bounded late-font correction, new-navigation cancellation, invalid/stale state and back-cache recovery. Browser APIs mocked.\nPASS: immediate navigation, visible outgoing page, intent-only asset warmup, low-priority same-origin deduplication, data-saver/slow-network/hidden gates and warmup failure fallback. Network and browser APIs mocked; real switching time is unmeasured."
+  }
+]

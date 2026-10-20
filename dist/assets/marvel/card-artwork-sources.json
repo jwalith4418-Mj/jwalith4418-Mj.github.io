@@ -1,0 +1,85 @@
+[
+  {
+    "character": "Hulk",
+    "source_page": "https://www.pngaaa.com/detail/3268902",
+    "download_url": "https://image.pngaaa.com/902/3268902.png",
+    "asset": "/assets/marvel/hulk-card.png",
+    "width": 1242,
+    "height": 1643,
+    "bytes": 547504,
+    "source_license_label": "Non-commercial Use"
+  },
+  {
+    "character": "Ant-Man",
+    "source_page": "https://www.pngaaa.com/detail/68451",
+    "download_url": "https://image.pngaaa.com/451/68451.png",
+    "asset": "/assets/marvel/antman-card.png",
+    "width": 713,
+    "height": 899,
+    "bytes": 582051,
+    "source_license_label": "Non-commercial Use"
+  },
+  {
+    "character": "Loki",
+    "source_page": "https://www.pngaaa.com/detail/190008",
+    "download_url": "https://image.pngaaa.com/8/190008.png",
+    "asset": "/assets/marvel/loki-card.png",
+    "width": 851,
+    "height": 1201,
+    "bytes": 348741,
+    "source_license_label": "Non-commercial Use"
+  },
+  {
+    "character": "Scarlet Witch",
+    "source_page": "https://www.pngaaa.com/detail/1504517",
+    "download_url": "https://image.pngaaa.com/517/1504517.png",
+    "asset": "/assets/marvel/scarletwitch-card.png",
+    "width": 1586,
+    "height": 2113,
+    "bytes": 759604,
+    "source_license_label": "Non-commercial Use"
+  },
+  {
+    "character": "Vision",
+    "source_page": "https://www.pngaaa.com/detail/1478693",
+    "download_url": "https://image.pngaaa.com/693/1478693.png",
+    "asset": "/assets/marvel/vision-card.png",
+    "width": 801,
+    "height": 956,
+    "bytes": 774736,
+    "source_license_label": "Non-commercial Use"
+  },
+  {
+    "character": "Hawkeye",
+    "source_page": "https://www.pngaaa.com/detail/312024",
+    "download_url": "https://image.pngaaa.com/24/312024.png",
+    "asset": "/assets/marvel/hawkeye-card.webp",
+    "width": 1600,
+    "height": 4001,
+    "bytes": 8109301,
+    "source_license_label": "Non-commercial Use",
+    "original_asset": "/assets/marvel/hawkeye-card.png",
+    "served_bytes": 4603950,
+    "encoding": "Lossless WebP; alpha and visible pixels unchanged"
+  },
+  {
+    "character": "Black Widow",
+    "source_page": "https://www.pngaaa.com/detail/186077",
+    "download_url": "https://image.pngaaa.com/77/186077.png",
+    "asset": "/assets/marvel/blackwidow-card.png",
+    "width": 1818,
+    "height": 3001,
+    "bytes": 1488274,
+    "source_license_label": "Non-commercial Use"
+  },
+  {
+    "character": "Wolverine",
+    "source_page": "https://www.pngaaa.com/detail/979424",
+    "download_url": "https://image.pngaaa.com/424/979424.png",
+    "asset": "/assets/marvel/wolverine-card.png",
+    "width": 602,
+    "height": 669,
+    "bytes": 329217,
+    "source_license_label": "Non-commercial Use"
+  }
+]

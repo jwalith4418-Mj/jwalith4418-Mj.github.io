@@ -1,0 +1,33 @@
+[
+  {
+    "project": "cropdoctor",
+    "url": "https://crophackfinal6.vercel.app/",
+    "status": 200,
+    "title": "CropDoctor V17 — Operator Console",
+    "checked_on": "2026-10-20",
+    "method": "Headless Microsoft Edge navigation and rendered body inspection",
+    "limits": "Initial interface rendering only. Backend integrations, displayed metrics and complete workflows were not validated.",
+    "capture": "dist\\assets\\evidence\\cropdoctor-demo-capture.webp",
+    "capture_sha256": "9631c92bea931062e0a38d137251380e651cfcb8f3cc1371ef1adb998be84bdc"
+  },
+  {
+    "project": "nexus",
+    "url": "https://nexus-decision-twin2.vercel.app/",
+    "status": 200,
+    "title": "NEXUS — The Decision Twin Platform",
+    "checked_on": "2026-10-20",
+    "method": "Headless Microsoft Edge navigation and rendered body inspection",
+    "limits": "Initial interface rendering only. Backend integrations, displayed metrics and complete workflows were not validated.",
+    "capture": "dist\\assets\\evidence\\nexus-demo-capture.webp",
+    "capture_sha256": "de089e8cb871d0d8a5081ca241627867664ae7f33cf785f0c07f3b78c06ece9a"
+  },
+  {
+    "project": "veritas",
+    "url": "https://final-veritas-six.vercel.app/",
+    "status": 405,
+    "title": "",
+    "checked_on": "2026-10-20",
+    "method": "Headless Microsoft Edge navigation and rendered body inspection",
+    "limits": "Initial interface rendering only. Backend integrations, displayed metrics and complete workflows were not validated."
+  }
+]

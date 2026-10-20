@@ -1,0 +1,6 @@
+.panda-chi-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:.95}
+.panda-chi-canvas[hidden]{display:none}
+html[data-portfolio-theme="panda"] .opening .character-stage{z-index:2}
+html[data-portfolio-theme="panda"] .opening .chi-halo{border-color:#e8bd7e25;box-shadow:0 0 45px #f5bd4512}
+.reading-mode .panda-chi-canvas,.reduced-motion .panda-chi-canvas{display:none}
+@media(prefers-reduced-motion:reduce){.panda-chi-canvas{display:none}}

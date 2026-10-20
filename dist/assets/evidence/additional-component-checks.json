@@ -1,0 +1,16 @@
+[
+  {
+    "project": "cdis",
+    "checked_on": "2026-10-20",
+    "source_sha256": "a3a5095d557aa81d0d91430f3edb302cb3a22cf99aaa1c2da856ae4f7652cf31",
+    "result": "Synthetic weighted scores match 67, 100 and 0; reordered requirements replay identically.",
+    "limits": "Only compute_alignment was executed. This is not a hiring probability, user outcome, API test or validation of the complete rule engine."
+  },
+  {
+    "project": "climaverse",
+    "checked_on": "2026-10-20",
+    "source_sha256": "0c32d510f385437c437161954ad7be794acbc4ae1ad09085ab028f6ef50c5584",
+    "result": "A two-record synthetic sync ledger verifies; editing the first mean value is detected.",
+    "limits": "In-memory ledger only. No climate prediction, satellite ingestion, independent anchoring or forecasting skill was validated."
+  }
+]

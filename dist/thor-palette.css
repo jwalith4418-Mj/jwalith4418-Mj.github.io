@@ -1,0 +1,53 @@
+/* Steel, charcoal and restrained gold for Thor and the learning chapter. */
+body[data-active-hero="thor"]{--scene-accent:#e4bc7d}
+body[data-active-hero="thor"] .site-header{background:#10151ef2;border-bottom-color:#9fb5cf30}
+body[data-active-hero="thor"] .hero-dock{background:#111821f2;border-color:#9fb5cf38}
+body[data-active-hero="thor"] .hero-dock a{color:#b9c5d3}
+body[data-active-hero="thor"] .hero-dock a[aria-current]{color:#e4bc7d}
+body[data-active-hero="thor"] .experience-controls{background:#10151ef2}
+body[data-active-hero="thor"] .experience-controls button,body[data-active-hero="thor"] #hero-status{color:#b9c5d3}
+body[data-active-hero="thor"] .nav-contact{background:#ae4036;border-color:#ae4036;color:#fff8eb!important}
+body[data-active-hero="thor"] .nav-contact:hover{background:#c84d42;border-color:#c84d42}
+.exposure-section{--thor-gold:#e4bc7d;--thor-mint:#c2d4e8;--thor-text:#eff2f5;--thor-muted:#b9c5d3;--thor-line:#93a8bf38}
+.exposure-section.content-section{color:var(--thor-text);background:radial-gradient(ellipse at 80% 250px,#34547738,transparent 650px),#0e151f!important}
+.environment-thor{background:radial-gradient(ellipse at 80% 330px,#5e789827,transparent 60%)}
+.environment-thor::before{background:url('/assets/marvel/asgard-horizon.svg') center 30px/1600px 750px no-repeat;filter:grayscale(1);opacity:.3;mask-image:linear-gradient(180deg,#000,#000 42%,#0009 65%,transparent 95%)}
+.environment-thor::after{background:linear-gradient(90deg,#0e151f99,transparent 70%),linear-gradient(180deg,transparent 15%,#0e151ff5 45%);opacity:1}
+.exposure-section .section-top{border-color:var(--thor-line)}
+.exposure-section .section-top .eyebrow,.exposure-section .section-top .subtle{color:#bac9d9}
+.exposure-section .section-intro h2{color:var(--thor-text);text-shadow:0 3px 24px #0d131c}
+.exposure-section .section-intro h2 em{color:var(--thor-gold)}
+.exposure-section .section-intro>div:first-child>.eyebrow{color:var(--thor-mint)}
+.exposure-section .section-intro>div:first-child>p:last-child{color:var(--thor-muted)}
+.art-thor{--power:#e4bc7d}
+.art-thor .power-ring{background:radial-gradient(ellipse,#f1d36518,transparent 68%)}
+.art-thor .hero-figure img{filter:drop-shadow(0 22px 28px #000812bb) drop-shadow(0 0 22px #b3c7de20)}
+.art-thor .hero-power-label{color:var(--thor-gold);border-color:#e4bc7d5e;background:#101923e6}
+.art-thor .hero-identity>span{color:#e8eef5}
+.art-thor .hero-identity small{color:#aabbd0;border-color:#aabbd055}
+.exposure-section .learning-filters button{color:#c4d0de;border-color:var(--thor-line);background:#111923}
+.exposure-section .learning-filters button.active{color:#111923;background:var(--thor-gold);border-color:var(--thor-gold)}
+.exposure-section .learning-filters button:hover:not(.active){background:#202c3c;border-color:#a9bfd8}
+.exposure-section .learning-filters button:focus-visible,.exposure-section summary:focus-visible{outline-color:var(--thor-gold)}
+.exposure-section .learning-count,.exposure-section #learning-count{color:var(--thor-muted)}
+.exposure-section .learning-group-heading h3,.exposure-section .program-card>h3,.exposure-section .experience-card>h3,.exposure-section .credential-title{color:var(--thor-text)}
+.exposure-section .learning-group-heading .mono,.exposure-section .program-card>.eyebrow,.exposure-section .institution-mark,.exposure-section .credential-issuer,.exposure-section .experience-organization{color:var(--thor-gold)}
+.exposure-section .program-card,.exposure-section .experience-card,.exposure-section .credential-card{background:#141c27;border-color:var(--thor-line);box-shadow:0 12px 35px #02050b2e}
+.exposure-section .program-card{border-top-color:#e4bc7d6b}
+.exposure-section .institution-mark{background:#e4bc7d0d;border-color:#e4bc7d55}
+.exposure-section .record-status{color:#c9d2de;background:#1d2838;border-color:#65778c65}
+.exposure-section .program-description,.exposure-section .experience-card>p,.exposure-section .record-detail{color:var(--thor-muted)}
+.exposure-section .experience-card>.experience-organization{color:var(--thor-gold)}
+.exposure-section .program-card details,.exposure-section .experience-card details{border-color:var(--thor-line)}
+.exposure-section .program-card summary,.exposure-section .experience-card summary,.exposure-section .credential-open{color:var(--thor-gold)}
+.exposure-section .credential-issuer small{color:#acbcd0}
+.exposure-section .exposure-footer{border-color:var(--thor-line);color:var(--thor-muted)}
+.exposure-section .exposure-footer a{color:var(--thor-gold)}
+.reading-mode .exposure-section.content-section,.reduced-motion .exposure-section.content-section{background:#0e151f!important}
+.reading-mode .environment-thor::before,.reduced-motion .environment-thor::before{opacity:.24}
+@media(max-width:760px){
+ .exposure-section.content-section{background:radial-gradient(ellipse at 85% 400px,#34547738,transparent 650px),#0e151f!important}
+ .environment-thor::before{background-size:1050px 650px;background-position:55% 200px;opacity:.24}
+ .environment-thor::after{background:linear-gradient(180deg,#0e151f80,transparent 15%,#0e151ff5 50%)}
+}
+@media(prefers-reduced-motion:reduce){.environment-thor::before{opacity:.24}}

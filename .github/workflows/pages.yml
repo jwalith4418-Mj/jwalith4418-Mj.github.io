@@ -1,0 +1,43 @@
+name: Publish personal portfolio
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate site
+        run: |
+          python3 scripts/build_styles.py
+          python3 scripts/validate.py
+          node scripts/check-resources.cjs
+  deploy:
+    needs: validate
+    if: github.repository_owner == 'jwalith4418-Mj' && github.event.repository.name == 'jwalith4418-Mj.github.io' && vars.ENABLE_GITHUB_PAGES == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate site
+        run: |
+          python3 scripts/build_styles.py
+          python3 scripts/validate.py
+          node scripts/check-resources.cjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Deploy portfolio
+        id: deployment
+        uses: actions/deploy-pages@v4

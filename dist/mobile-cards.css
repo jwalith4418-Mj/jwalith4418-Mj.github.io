@@ -1,0 +1,35 @@
+/* Compact Marvel project cards. Panda uses the vertical chapter opening. */
+@media(max-width:760px),(max-width:1024px) and (max-height:500px){
+ html[data-portfolio-theme="marvel"] .work-section .project-track{--card-width:calc(100vw - 56px);grid-auto-columns:var(--card-width);align-items:start;gap:12px;scroll-padding-inline:20px;padding-right:36px;padding-bottom:16px}
+ html[data-portfolio-theme="marvel"] .work-section .project-card[data-card-hero]{min-height:0;height:auto;align-self:start;background:#111a23;border:1px solid #64768c55;border-top:2px solid var(--card-accent);border-radius:6px}
+ html[data-portfolio-theme="marvel"] .work-section .project-card .card-content{display:flex;flex-direction:column;height:auto;min-height:0;padding:18px;gap:16px}
+ html[data-portfolio-theme="marvel"] .work-section .card-top{align-items:flex-start;margin:0;gap:12px}
+ html[data-portfolio-theme="marvel"] .work-section .card-top .mono{max-width:62%;font:10px/1.6 var(--mono);letter-spacing:0;padding:0}
+ html[data-portfolio-theme="marvel"] .work-section .card-top .project-stage{max-width:38%;font:10px/1.6 var(--sans);text-align:right}
+ html[data-portfolio-theme="marvel"] .work-section .project-heading{display:grid;grid-template-columns:minmax(0,1fr) 42%;align-items:center;gap:12px;width:100%}
+ html[data-portfolio-theme="marvel"] .work-section .project-card h3{font:600 clamp(25px,6.8vw,32px)/1.13 var(--sans);letter-spacing:-.04em;min-width:0;margin:0;overflow-wrap:anywhere}
+ html[data-portfolio-theme="marvel"] .work-section .project-character{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:172px!important;min-width:0;width:100%;margin:0;padding:0 0 4px;gap:8px}
+ html[data-portfolio-theme="marvel"] .work-section .project-character img{display:block;flex:0 0 auto;max-width:100%;width:100%;height:142px;max-height:142px!important;object-fit:contain}
+ html[data-portfolio-theme="marvel"] .work-section .project-character figcaption{position:static;max-width:100%;font:11px/1.4 var(--sans);color:var(--card-accent);text-align:center}
+ html[data-portfolio-theme="marvel"] .work-section .project-signature{inset:16px 5% 32px;opacity:.32}
+ html[data-portfolio-theme="marvel"] .work-section .project-overview{width:100%;align-self:auto}
+ html[data-portfolio-theme="marvel"] .work-section .card-description{font:15px/1.7 var(--sans);max-width:none;margin:0 0 14px;color:#edf0ed}
+ html[data-portfolio-theme="marvel"] .work-section .project-focus{font:12px/1.6 var(--sans);gap:8px 12px;color:#b6c3cf}
+ html[data-portfolio-theme="marvel"] .work-section .project-focus li{padding-left:9px;max-width:100%;overflow-wrap:anywhere}
+ html[data-portfolio-theme="marvel"] .work-section .card-bottom{display:flex;flex-direction:column;align-items:stretch;align-self:auto;width:100%;margin:0;gap:12px;padding-top:14px}
+ html[data-portfolio-theme="marvel"] .work-section .card-stack{font:12px/1.7 var(--sans);width:100%;max-width:none;margin:0;color:#b6c3cf;overflow-wrap:anywhere}
+ html[data-portfolio-theme="marvel"] .work-section .open-project{display:flex;justify-content:space-between;min-height:48px;margin:0;padding:12px 14px;border:1px solid #64768c88;border-radius:4px;font:14px/1.5 var(--sans);color:#edf0ed;background:#ffffff05}
+ html[data-portfolio-theme="marvel"] .work-section .open-project:focus-visible{outline-offset:2px}
+}
+@media(max-width:374px){
+ html[data-portfolio-theme="marvel"] .work-section .project-track{--card-width:calc(100vw - 48px);padding-right:30px;scroll-padding-inline:18px}
+ html[data-portfolio-theme="marvel"] .work-section .project-card .card-content{padding:16px;gap:14px}
+ html[data-portfolio-theme="marvel"] .work-section .project-heading{grid-template-columns:minmax(0,1fr) 38%;gap:10px}
+ html[data-portfolio-theme="marvel"] .work-section .project-card h3{font-size:24px}
+ html[data-portfolio-theme="marvel"] .work-section .project-character{height:148px!important}
+ html[data-portfolio-theme="marvel"] .work-section .project-character img{height:118px;max-height:118px!important}
+}
+@media(max-width:1024px) and (max-height:500px) and (min-width:761px){
+ html[data-portfolio-theme="marvel"] .work-section .project-track{--card-width:min(70vw,620px);padding-right:calc(100vw - var(--card-width) - var(--gutter))}
+ html[data-portfolio-theme="marvel"] .work-section .project-heading{grid-template-columns:minmax(0,1fr) 160px}
+}

@@ -1,0 +1,32 @@
+/* White silk over a blue-violet atmosphere, inspired by the supplied web art. */
+.work-section.content-section{background:radial-gradient(ellipse at 82% 210px,#8e365144,transparent 34%),radial-gradient(ellipse at 86% 400px,#4159a64a,transparent 55%),linear-gradient(135deg,#080e1d,#13172e 55%,#090f21)!important}
+.environment-spiderman{background:radial-gradient(ellipse at 83% 400px,#536ccd28,transparent 50%)}
+.environment-spiderman::before{background:url('/assets/marvel/silk-web.svg') center top/1600px 1000px repeat-y;opacity:.38;mask-image:linear-gradient(90deg,#0007,#000 65%)}
+.environment-spiderman::after{background:linear-gradient(90deg,#080e1d88,transparent 65%),linear-gradient(180deg,transparent,#080e1d33)}
+.work-section .section-intro{position:relative}
+.art-spiderman::before,.art-spiderman::after{content:'';position:absolute;pointer-events:none;z-index:1;background:url('/assets/marvel/web-hammock.svg') center/100% 100% no-repeat}
+.art-spiderman::before{inset:34% -24% -8%;opacity:.72;transform:perspective(650px) rotateX(16deg)}
+.art-spiderman::after{inset:66% -34% -14%;opacity:.3;filter:blur(3px);transform:scale(1.12)}
+.art-spiderman .power-ring{clip-path:none;background:radial-gradient(ellipse,#8296f31f,transparent 65%)}
+.art-spiderman .hero-figure img{filter:drop-shadow(0 20px 22px #02040dbb) drop-shadow(0 0 18px #89b8ff27)}
+.work-section .section-intro h2{text-shadow:0 3px 24px #080d1d}
+.work-section .section-intro>div:first-child>p{color:#bfc9df}
+.work-section .card-shade::after{background:url('/assets/marvel/silk-web.svg') right top/900px auto;opacity:.14}
+.work-section .project-card,.work-section .index-card{background:linear-gradient(135deg,#202c48,#0c1327);border-color:#a0bde34a}
+.work-section .card-shade{background:linear-gradient(90deg,#0b1328f5,#0b1328c9 65%,#0b132885)}
+.web-pulse{color:#daecff;border-color:#a6c8ef55;background:#152442b0}
+.web-pulse:hover{background:#283c60;border-color:#d8ecff}
+/* Accent changes crossfade without delaying the native, interruptible scroll. */
+.brand-mark,.nav-contact,.site-header nav sup,.hero-dock a,.hero-dock a span,.chapter-rail a,.experience-controls button,.sound-volume input{transition:color .5s ease,background-color .5s ease,border-color .5s ease,box-shadow .5s ease}
+.hero-figure img{will-change:transform,opacity}
+.reading-mode,.reduced-motion{scroll-behavior:auto}
+html:has(body.reading-mode),html:has(body.reduced-motion),html:has(body.motion-paused){scroll-behavior:auto}
+.reading-mode .environment-spiderman::before,.reduced-motion .environment-spiderman::before{opacity:.13}
+.reading-mode .art-spiderman::after,.reduced-motion .art-spiderman::after{display:none}
+@media(max-width:760px){
+ .work-section.content-section{background:radial-gradient(ellipse at 80% 650px,#455aa746,transparent 800px),linear-gradient(140deg,#080e1d,#171b33 55%,#090f21)!important}
+ .environment-spiderman::before{background-size:1000px 850px;opacity:.3}
+ .art-spiderman::before{inset:28% -18% -9%}
+ .art-spiderman::after{inset:68% -24% -15%;filter:blur(2px)}
+}
+@media(prefers-reduced-motion:reduce){.environment-spiderman::before{opacity:.13}.art-spiderman::after{display:none}}

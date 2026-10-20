@@ -1,0 +1,14 @@
+/* A shared, keyboard-accessible switch; visual engines stay in separate pages. */
+.site-header{gap:20px}
+.site-header nav{margin-left:auto}
+.portfolio-theme-switch{display:inline-flex;align-items:center;flex-shrink:0;min-height:44px;padding:4px;gap:3px;border:1px solid #97a6b847;border-radius:24px;background:#0d1522;color:#b8c4d2;font:500 11px/1.2 var(--sans,Arial,sans-serif);letter-spacing:0;box-shadow:0 2px 12px #0002}
+.portfolio-theme-switch .theme-option{display:grid;place-items:center;min-width:52px;min-height:34px;padding:7px 10px;border-radius:20px}
+html[data-portfolio-theme="marvel"] .portfolio-theme-switch .is-current{background:#bd3441;color:#fff}
+html[data-portfolio-theme="panda"] .portfolio-theme-switch{background:#271a12;color:#cdb895;border-color:#bfa07166}
+html[data-portfolio-theme="panda"] .portfolio-theme-switch .is-current{background:#e7c57e;color:#20160c}
+.portfolio-theme-switch:hover{border-color:#d6e3f5}
+.portfolio-theme-switch:focus-visible{outline:2px solid #e7c57e;outline-offset:4px}
+.portfolio-theme-switch[aria-busy="true"]{cursor:progress}
+@media(max-width:1100px){.site-header{gap:14px}.site-header nav{gap:16px;font-size:11px}.portfolio-theme-switch{font-size:10px}.portfolio-theme-switch .theme-option{min-width:46px;padding:7px 8px}.brand-label{display:none}}
+@media(max-width:860px){.site-header nav{display:none}.site-header .menu-toggle{display:flex;align-items:center;gap:8px}.portfolio-theme-switch{margin-left:auto}.site-header{gap:12px}.portfolio-theme-switch .theme-option{min-width:44px}}
+@media(max-width:380px){.site-header{padding-left:16px;padding-right:16px;gap:8px}.portfolio-theme-switch{font-size:10px}.portfolio-theme-switch .theme-option{padding-left:6px;padding-right:6px}.site-header .menu-toggle{gap:5px;font-size:10px}}

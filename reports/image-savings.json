@@ -1,0 +1,110 @@
+[
+  {
+    "original": "assets\\marvel\\antman-card.png",
+    "derivative": "assets\\marvel\\antman-card-optimized.webp",
+    "before": 582051,
+    "after": 53680
+  },
+  {
+    "original": "assets\\marvel\\blackwidow-card.png",
+    "derivative": "assets\\marvel\\blackwidow-card-optimized.webp",
+    "before": 1488274,
+    "after": 111542
+  },
+  {
+    "original": "assets\\marvel\\captain-cutout.png",
+    "derivative": "assets\\marvel\\captain-cutout-optimized.webp",
+    "before": 686080,
+    "after": 60422
+  },
+  {
+    "original": "assets\\marvel\\hawkeye-card.webp",
+    "derivative": "assets\\marvel\\hawkeye-card-optimized.webp",
+    "before": 4603950,
+    "after": 120008
+  },
+  {
+    "original": "assets\\marvel\\hulk-card.png",
+    "derivative": "assets\\marvel\\hulk-card-optimized.webp",
+    "before": 547504,
+    "after": 143534
+  },
+  {
+    "original": "assets\\marvel\\ironman-cutout.png",
+    "derivative": "assets\\marvel\\ironman-cutout-optimized.webp",
+    "before": 802816,
+    "after": 60670
+  },
+  {
+    "original": "assets\\marvel\\loki-card.png",
+    "derivative": "assets\\marvel\\loki-card-optimized.webp",
+    "before": 348741,
+    "after": 96128
+  },
+  {
+    "original": "assets\\marvel\\panther.png",
+    "derivative": "assets\\marvel\\panther-optimized.webp",
+    "before": 453632,
+    "after": 38306
+  },
+  {
+    "original": "assets\\marvel\\scarletwitch-card.png",
+    "derivative": "assets\\marvel\\scarletwitch-card-optimized.webp",
+    "before": 759604,
+    "after": 241250
+  },
+  {
+    "original": "assets\\marvel\\spiderman-cutout.png",
+    "derivative": "assets\\marvel\\spiderman-cutout-optimized.webp",
+    "before": 320512,
+    "after": 24802
+  },
+  {
+    "original": "assets\\marvel\\strange.png",
+    "derivative": "assets\\marvel\\strange-optimized.webp",
+    "before": 640000,
+    "after": 56096
+  },
+  {
+    "original": "assets\\marvel\\thor-cutout.png",
+    "derivative": "assets\\marvel\\thor-cutout-optimized.webp",
+    "before": 1120256,
+    "after": 101234
+  },
+  {
+    "original": "assets\\marvel\\vision-card.png",
+    "derivative": "assets\\marvel\\vision-card-optimized.webp",
+    "before": 774736,
+    "after": 42650
+  },
+  {
+    "original": "assets\\marvel\\wolverine-card.png",
+    "derivative": "assets\\marvel\\wolverine-card-optimized.webp",
+    "before": 329217,
+    "after": 52228
+  },
+  {
+    "original": "assets\\kungfu\\oogway-original.webp",
+    "derivative": "assets\\kungfu\\oogway-original-optimized.webp",
+    "before": 208198,
+    "after": 35702
+  },
+  {
+    "original": "assets\\kungfu\\po-original.webp",
+    "derivative": "assets\\kungfu\\po-original-optimized.webp",
+    "before": 550074,
+    "after": 94760
+  },
+  {
+    "original": "assets\\kungfu\\shifu-original.webp",
+    "derivative": "assets\\kungfu\\shifu-original-optimized.webp",
+    "before": 573512,
+    "after": 118120
+  },
+  {
+    "original": "assets\\kungfu\\tigress-original.webp",
+    "derivative": "assets\\kungfu\\tigress-original-optimized.webp",
+    "before": 162702,
+    "after": 39676
+  }
+]

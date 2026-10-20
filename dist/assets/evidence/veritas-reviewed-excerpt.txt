@@ -1,0 +1,21 @@
+VERITAS — reviewed source excerpt
+Source: openai/VERITAS_V6_2/VERITAS_V6_1/src/veritas/celv/lra.py
+Lines 346–361
+SHA-256 of full supplied source: 072b358fd36f8c8675fd66b4c6b6055011bfd122d51ea874a462f8e91e06be65
+
+def check_core(cons: Sequence[LinCons], core: Sequence[int], max_constraints: int = 20000) -> bool:
+    """Independently re-check an unsat core.
+
+    The *proof checker*: it takes only the claimed core and re-derives
+    unsatisfiability, sharing no state with the search that produced it. A
+    certificate whose core fails this check is void (§12).
+
+    This check has already earned its keep: it caught a namespace confusion
+    between origin labels and row indices in the core extractor, on the first
+    realistic example ever run through the system. That is the argument for
+    proof-checking every proof, made by the code rather than by the prose.
+    """
+    subset = select_by_core(cons, core)
+    if not subset:
+        return False
+    return not is_satisfiable(subset, max_constraints=max_constraints).sat

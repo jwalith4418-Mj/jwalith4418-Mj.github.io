@@ -1,0 +1,32 @@
+{
+  "cropdoctor": {
+    "check": "Dry, rainy, and saturation scenarios through the supplied root-zone water balance function.",
+    "result": "Dry soil decreases; rain increases storage; saturation remains capped at 100%.",
+    "limits": "Synthetic inputs only. This does not validate agricultural accuracy, model diagnosis, telephony, field yield, or deployment.",
+    "checked_on": "2026-10-20",
+    "source": "AI CROP DOCTOR/aicropfinal/intelligence/physics.py",
+    "source_sha256": "ceedc217fb82a98da33c538a7dade973d69e8472aa8ead2da69e79ce2cbd217d",
+    "excerpt": "def water_balance_step(moisture_pct: float, crop: str, stage: str, soil: str,\n                       et0: float, rain_mm: float, irrigation_mm: float,\n                       irrigation_effective_mm: float = 0.0) -> float:\n    \"\"\"\n    One-day root-zone water balance. Returns new moisture (% of field capacity).\n      TAW = AWC × root_depth; depletion driven by ETc; recharge by effective\n      (infiltrated) rain + irrigation; capped at field capacity (100%).\n\n    irrigation_mm            : gross applied water (infiltration eff applied here)\n    irrigation_effective_mm  : water already net of losses (e.g. from\n                               deficit_to_litres, which grosses up by 1/eff) —\n                               added directly, preventing double-discounting.\n    \"\"\"\n    taw_mm = AWC_MM_PER_M.get(soil, 170.0) * ROOT_DEPTH_M.get(stage, 0.5)\n    eff = INFILTRATION_EFF.get(soil, 0.80)\n    stored_mm = moisture_pct / 100.0 * taw_mm\n    stored_mm += (eff * (rain_mm + irrigation_mm) + irrigation_effective_mm\n                  - etc(crop, stage, et0))\n    return max(0.0, min(100.0, stored_mm / taw_mm * 100.0))\n",
+    "download": "/assets/evidence/cropdoctor-reviewed-excerpt.txt"
+  },
+  "nexus": {
+    "check": "Three sealed entries through the supplied ledger, then a deliberate change to the first prediction.",
+    "result": "The intact chain verifies; the changed prediction raises TamperError.",
+    "limits": "In-memory test only. This does not establish public timestamps, independent anchoring, forecast accuracy, or live deployment.",
+    "checked_on": "2026-10-20",
+    "source": "Nexus/nexus-decision-twin-v18/nexus-rin/backend/forward_ledger/ledger.py",
+    "source_sha256": "9f7d2303b5ac6e324788870ac6fb35787914ddf06716182cb6d5532edfba0eef",
+    "excerpt": "    def verify(self) -> bool:\n        \"\"\"Recompute the whole chain. Any edit to any sealed core breaks here.\"\"\"\n        prev = GENESIS\n        for i, e in enumerate(self._entries):\n            if e.seq != i:\n                raise TamperError(f\"seq gap at {i}\")\n            if e.prev_hash != prev:\n                raise TamperError(f\"broken link at seq {e.seq}\")\n            if e.compute_hash() != e.hash:\n                raise TamperError(f\"hash mismatch at seq {e.seq} — entry was altered after sealing\")\n            prev = e.hash\n        return True\n",
+    "download": "/assets/evidence/nexus-reviewed-excerpt.txt"
+  },
+  "veritas": {
+    "check": "Contradictory and satisfiable rational bounds through the supplied solver and core checker.",
+    "result": "x ≥ 3 and x ≤ 2 are rejected; the contradiction core rechecks; x between 1 and 2 receives a satisfying witness.",
+    "limits": "Focused local examples only. This does not rerun the full test suite or establish standards certification.",
+    "checked_on": "2026-10-20",
+    "source": "openai/VERITAS_V6_2/VERITAS_V6_1/src/veritas/celv/lra.py",
+    "source_sha256": "072b358fd36f8c8675fd66b4c6b6055011bfd122d51ea874a462f8e91e06be65",
+    "excerpt": "def check_core(cons: Sequence[LinCons], core: Sequence[int], max_constraints: int = 20000) -> bool:\n    \"\"\"Independently re-check an unsat core.\n\n    The *proof checker*: it takes only the claimed core and re-derives\n    unsatisfiability, sharing no state with the search that produced it. A\n    certificate whose core fails this check is void (§12).\n\n    This check has already earned its keep: it caught a namespace confusion\n    between origin labels and row indices in the core extractor, on the first\n    realistic example ever run through the system. That is the argument for\n    proof-checking every proof, made by the code rather than by the prose.\n    \"\"\"\n    subset = select_by_core(cons, core)\n    if not subset:\n        return False\n    return not is_satisfiable(subset, max_constraints=max_constraints).sat\n",
+    "download": "/assets/evidence/veritas-reviewed-excerpt.txt"
+  }
+}

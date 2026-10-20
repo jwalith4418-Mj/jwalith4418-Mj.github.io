@@ -1,0 +1,30 @@
+Reviewed source: hackathon/AI resume/CDIS_MVP_v2.0/cdis/app/services/decision.py
+Original file SHA-256: a3a5095d557aa81d0d91430f3edb302cb3a22cf99aaa1c2da856ae4f7652cf31
+Checked: 2026-10-20
+Scope: Source inspection, not full application validation.
+
+---
+def compute_alignment(requirements: dict[str, int], coverage: dict[str, int]) -> dict:
+    """Pure scoring core. Deterministic; no I/O; shared by analysis and replay."""
+    total_weight = sum(requirements.values()) or 1
+    factors, evidence, aligned = [], [], 0.0
+    for skill, freq in sorted(requirements.items(), key=lambda kv: (-kv[1], kv[0])):
+        cov = coverage.get(skill, 0) / 100.0
+        weight = freq / total_weight
+        aligned += weight * cov
+        gain = round(weight * (1 - cov) * 100)
+        evidence.append({
+            "skill": skill, "jd_mentions": freq,
+            "evidence_score": coverage.get(skill, 0),
+            "status": "covered" if cov >= 0.7 else ("weak" if cov > 0 else "missing"),
+        })
+        if gain > 0:
+            factors.append({
+                "skill": skill,
+                "why": (f"Appears {freq}× in this job description; your verified evidence "
+                        f"score is {coverage.get(skill, 0)}/100."),
+                "estimated_gain": gain,
+            })
+    factors.sort(key=lambda f: (-f["estimated_gain"], f["skill"]))
+    return {"alignment_score": round(aligned * 100), "limiting_factors": factors,
+            "evidence": evidence, "total_weight": total_weight}

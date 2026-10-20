@@ -1,0 +1,85 @@
+/* A shared reading system; character colours remain accents rather than surfaces. */
+:root{--finish-text:#edf1f4;--finish-muted:#b6c3cf;--finish-surface:#111a26;--finish-line:#64768c66;--finish-accent:#b5ddf0;--finish-radius:4px;--finish-space:clamp(64px,7vw,108px)}
+html[data-portfolio-theme="panda"]{--finish-text:#32261b;--finish-muted:#6a5540;--finish-surface:#f6efdd;--finish-line:#866c4e55;--finish-accent:#8b481f}
+.figure-rig{position:absolute;pointer-events:none;z-index:3;backface-visibility:hidden;will-change:transform}
+.hero-figure .figure-rig{z-index:1}
+.rig-source{visibility:hidden!important}
+.figure-rig[hidden]{display:none!important}
+.hero-copy .hero-person{font:500 clamp(13px,1.2vw,16px)/1.6 var(--sans);letter-spacing:.02em;margin:0 0 20px;color:var(--finish-muted)}
+.hero-copy .hero-description{font-size:clamp(14px,1.1vw,17px);line-height:1.8;max-width:43ch}
+.marvel-opening .hero-copy h1{font-size:clamp(70px,8.2vw,126px);letter-spacing:-.065em;line-height:.97}
+.marvel-opening .hero-copy h1 em{font-size:.7em;letter-spacing:-.04em}
+.hero-copy .hero-academics{font:11px/1.8 var(--mono);letter-spacing:0;margin:22px 0 0;max-width:48ch;color:var(--finish-muted)}
+.content-section{padding-top:var(--finish-space);padding-bottom:var(--finish-space)}
+.section-top{margin-bottom:34px}.section-top .eyebrow,.section-top .mono{font-size:10px;line-height:1.7}
+html[data-portfolio-theme="marvel"] .section-intro h2{font:500 clamp(42px,5.5vw,78px)/1.08 var(--sans);letter-spacing:-.045em}
+html[data-portfolio-theme="marvel"] .section-intro>div:first-child>p:last-child{font:15px/1.85 var(--sans);max-width:52ch;color:var(--finish-muted)}
+html[data-portfolio-theme="marvel"] .work-section .project-card[data-card-hero],html[data-portfolio-theme="marvel"] .work-section .project-card[data-card-hero]:nth-child(3n+2),html[data-portfolio-theme="marvel"] .work-section .project-card[data-card-hero]:hover,html[data-portfolio-theme="marvel"] .work-section .project-card[data-card-hero]:focus-within{background:var(--finish-surface)}
+html[data-portfolio-theme="marvel"] .work-section .project-card[data-card-hero]{border-top:2px solid var(--card-accent);border-bottom:1px solid var(--finish-line)}
+html[data-portfolio-theme="marvel"] .work-section .project-character{height:195px;margin-top:24px}html[data-portfolio-theme="marvel"] .work-section .project-character img{max-height:170px}
+html[data-portfolio-theme="marvel"] .work-section .project-character figcaption{font-size:11px;color:var(--finish-muted)}
+html[data-portfolio-theme="marvel"] .work-section .project-signature{opacity:.24}
+html[data-portfolio-theme="marvel"] .work-section .card-content{padding:30px;column-gap:48px;row-gap:30px}
+html[data-portfolio-theme="marvel"] .work-section .card-description{font-size:17px;line-height:1.75;color:var(--finish-text)}
+html[data-portfolio-theme="marvel"] .work-section .project-focus{font-size:12px;line-height:1.8;color:var(--finish-muted)}
+html[data-portfolio-theme="marvel"] .work-section .project-stage{font-size:11px;color:var(--finish-muted)}
+html[data-portfolio-theme="marvel"] .work-section .index-card[data-card-hero]{background:var(--finish-surface)}
+.case-story{margin:32px 0 38px;border-top:1px solid var(--finish-line)}
+.case-story section{padding:24px 0;border-bottom:1px solid var(--finish-line)}
+.case-question .eyebrow{font:10px/1.5 var(--mono);color:var(--finish-accent);margin-bottom:12px}
+.case-question h3{font:500 clamp(23px,3vw,33px)/1.35 var(--sans);letter-spacing:-.025em;color:var(--finish-text);margin:0;max-width:32ch}
+.case-evidence h3,.case-validation h3{font:500 15px/1.5 var(--sans);color:var(--finish-text);margin:0 0 10px}
+.case-evidence p,.case-validation li{font:15px/1.85 var(--sans);color:var(--finish-muted);margin:0;max-width:67ch}
+.case-validation ul{padding-left:18px;margin:0}.case-validation li+li{margin-top:9px}
+.project-reader-header .project-hero-name{font-size:11px;color:var(--finish-muted)}
+.project-reader-header img{width:100px;height:145px;justify-self:end}
+.project-reader-header{grid-template-columns:minmax(0,1fr) 100px}
+.project-reader .detail-summary{color:var(--finish-muted);line-height:1.8}
+.experience-panel{position:fixed;right:24px;bottom:20px;z-index:79;font:12px/1.5 var(--sans);color:#e8eef5;max-width:calc(100vw - 32px)}
+.experience-panel>summary{cursor:pointer;list-style:none;display:flex;gap:18px;align-items:center;min-height:48px;padding:12px 18px;background:#101925f2;border:1px solid #6b829c77;border-radius:var(--finish-radius);box-shadow:0 5px 20px #0003}
+.experience-panel>summary::-webkit-details-marker{display:none}
+.experience-panel>summary::after{content:'＋';font-size:19px;color:#b6d7ec}
+.experience-panel[open]>summary::after{content:'−'}
+#experience-state{color:#b8c8d8;font-size:10px}
+.experience-panel-body{position:absolute;right:0;bottom:calc(100% + 10px);width:min(510px,calc(100vw - 32px));background:#101925f7;border:1px solid #6b829c77;border-radius:var(--finish-radius);padding:18px;box-shadow:0 12px 45px #0007;backdrop-filter:blur(14px);max-height:65svh;overflow:auto;overscroll-behavior:contain}
+.experience-panel .hero-dock{position:static;transform:none;display:flex;flex-wrap:wrap;gap:6px;background:none;border:0;padding:0 0 14px;margin:0 0 14px;box-shadow:none;border-radius:0;backdrop-filter:none;max-width:none;border-bottom:1px solid #6b829c44}
+.experience-panel .hero-dock .dock-label{width:100%;max-width:none;font-size:10px;color:#b8c8d8;padding:0 0 7px}
+.experience-panel .hero-dock a{min-height:44px;padding:10px 13px;font-size:11px;color:#b8c8d8;border:1px solid #6b829c44}
+.experience-panel .hero-dock a[aria-current]{background:#23354a;color:#eef5fa}
+.experience-panel .experience-controls{position:static;display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:center;gap:8px;padding:0;background:none;border:0;box-shadow:none;backdrop-filter:none}
+.experience-panel .experience-controls button{font:12px/1.5 var(--sans);color:#d7e5ef;min-height:44px;padding:10px 12px;border:1px solid #6b829c55;border-radius:3px;background:#152334}
+.experience-panel .experience-controls button:hover{background:#253b53}
+.experience-panel #hero-status,.experience-panel #dragon-status{display:block;width:100%;font:10px/1.5 var(--mono);color:#b8c8d8;min-width:0;margin:0 0 8px}
+.experience-panel .sound-volume{font-size:11px;color:#b8c8d8;display:flex;align-items:center;gap:12px;width:100%;min-height:44px}
+.experience-panel .sound-volume input{min-height:44px;flex:1;width:auto;accent-color:#b6d7ec}
+.experience-panel :focus-visible{outline:2px solid #b6d7ec;outline-offset:4px}
+.chapter-rail{opacity:.35}.chapter-rail:hover,.chapter-rail:focus-within{opacity:1}
+html[data-portfolio-theme="marvel"] .city-grid{opacity:.13}
+html[data-portfolio-theme="marvel"] .contact-section footer{padding-bottom:25px}
+html[data-portfolio-theme="panda"] .hero-copy .hero-description,html[data-portfolio-theme="panda"] .hero-copy .hero-academics{color:#e8d9bc}
+html[data-portfolio-theme="panda"] .hero-copy .hero-person{color:#f6d28d}
+html[data-portfolio-theme="panda"] .character-world{left:51%}
+html[data-portfolio-theme="panda"] .hero-copy{max-width:48%;pointer-events:auto!important}
+html[data-portfolio-theme="panda"] .hero-copy h1{font-size:clamp(48px,5.5vw,82px);line-height:1.1}
+html[data-portfolio-theme="panda"] .case-story{--finish-text:#32261b;--finish-muted:#6a5540;--finish-accent:#8b481f;--finish-line:#866c4e55}
+@media(max-width:1100px){.experience-panel{right:16px;bottom:16px}.site-header nav{gap:16px}.site-header nav a{font-size:11px}}
+@media(max-width:760px){
+ .section-top{margin-bottom:24px}.section-top .mono{font-size:9px}.chapter-rail{display:none}
+ .experience-panel{right:12px;bottom:12px}.experience-panel>summary{padding:10px 13px;min-height:44px;gap:12px}#experience-state{font-size:9px}
+ html[data-portfolio-theme="marvel"] .work-section .card-content{padding:24px 22px;gap:24px}html[data-portfolio-theme="marvel"] .work-section .card-description{font-size:15px}
+ html[data-portfolio-theme="marvel"] .work-section .project-character{height:160px}html[data-portfolio-theme="marvel"] .work-section .project-character img{max-height:140px}
+ .case-story{margin:24px 0}.case-story section{padding:21px 0}.case-evidence p,.case-validation li{font-size:14px}
+ .project-reader-header{grid-template-columns:minmax(0,1fr) 64px;gap:15px}.project-reader-header img{width:64px;height:95px}
+ .marvel-opening .hero-copy h1{font-size:clamp(64px,15vw,90px)}.hero-copy .hero-academics{font-size:10px;max-width:35ch}
+ html[data-portfolio-theme="panda"] .hero-copy{max-width:71%;top:26%}
+ html[data-portfolio-theme="panda"] .hero-copy h1{font-size:clamp(34px,8.8vw,52px)}
+ html[data-portfolio-theme="panda"] .hero-copy .hero-description{font-size:12px;max-width:29ch}
+ html[data-portfolio-theme="panda"] .hero-copy .hero-academics{display:none}
+ html[data-portfolio-theme="panda"] .character-world{left:43%;top:36%;bottom:23%}
+}
+@media(prefers-reduced-motion:reduce){.figure-rig{display:none!important}.rig-source{visibility:visible!important}}
+
+.experience-panel .experience-controls{pointer-events:auto;max-width:none;width:100%;border-radius:0;min-height:0}
+.hero-figure img{object-position:center!important}
+html[data-portfolio-theme="panda"] .hero-copy .hero-academics{margin:0 0 20px}
+@media(max-height:680px) and (min-width:761px){html[data-portfolio-theme="panda"] .hero-copy h1{font-size:46px}html[data-portfolio-theme="panda"] .hero-copy .hero-academics{display:none}.marvel-opening .hero-copy h1{font-size:82px}}

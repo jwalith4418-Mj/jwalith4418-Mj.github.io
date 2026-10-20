@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+ <rect width="1200" height="630" fill="#0d1218"/>
+ <g font-family="DejaVu Sans, sans-serif">
+  <text x="70" y="72" font-size="18" fill="#b2bec6">MJ / SYSTEMS, STORIES &amp; SPACE</text>
+  <path d="M70 100h1060M70 516h1060" stroke="#3f4b57"/>
+  <text x="70" y="253" font-size="116" fill="#edf0ed" letter-spacing="-4">Jwalith.</text>
+  <text x="70" y="342" font-size="44" fill="#f09280">Systems. Stories. Space.</text>
+  <text x="73" y="416" font-size="27" fill="#b2bec6">AI, engineering &amp; writing.</text>
+  <text x="73" y="570" font-size="18" fill="#edf0ed">MADHYAHNAPU JWALITH</text>
+  <text x="722" y="570" font-size="17" fill="#b2bec6">ABV-IIITM GWALIOR / IIT MADRAS</text>
+ </g>
+ <g transform="translate(941 205) scale(2.75)" fill="none" stroke="#edf0ed" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter">
+  <path d="M6 48V16l11.5 16L29 16v32"/>
+  <path d="M37 16h20v24c0 8-4 12-11 12-6 0-10-4-10-10"/>
+ </g>
+</svg>

@@ -1,0 +1,100 @@
+/* Each project has one character identity; the reading surfaces stay clear. */
+[data-card-hero]{--card-bg:#101825;--card-accent:#c3d9f2;--card-glow:#7aaee822}
+[data-card-hero="ironman"]{--card-bg:#1b1315;--card-accent:#f0cf91;--card-glow:#8ce7ff33}
+[data-card-hero="captain"]{--card-bg:#111d2c;--card-accent:#b8dbff;--card-glow:#db4d4d22}
+[data-card-hero="spiderman"]{--card-bg:#1b111c;--card-accent:#ffaba7;--card-glow:#779dff22}
+[data-card-hero="strange"]{--card-bg:#20160f;--card-accent:#ffcc8c;--card-glow:#f59a352a}
+[data-card-hero="panther"]{--card-bg:#170f21;--card-accent:#d6a6ff;--card-glow:#a244eb33}
+[data-card-hero="thor"]{--card-bg:#102518;--card-accent:#ffe18a;--card-glow:#efdc5626}
+[data-card-hero="hulk"]{--card-bg:#132017;--card-accent:#b7eb92;--card-glow:#8be65033}
+[data-card-hero="antman"]{--card-bg:#241518;--card-accent:#ffc1b5;--card-glow:#ff746333}
+[data-card-hero="loki"]{--card-bg:#0e211f;--card-accent:#ebd193;--card-glow:#57e6ac33}
+[data-card-hero="scarletwitch"]{--card-bg:#28121e;--card-accent:#ffb0c8;--card-glow:#ff366e33}
+[data-card-hero="vision"]{--card-bg:#112422;--card-accent:#f3dca4;--card-glow:#e7c35533}
+[data-card-hero="hawkeye"]{--card-bg:#1a152a;--card-accent:#d8bdff;--card-glow:#ae7df233}
+[data-card-hero="blackwidow"]{--card-bg:#21171b;--card-accent:#ffb6a8;--card-glow:#64caff33}
+[data-card-hero="wolverine"]{--card-bg:#192030;--card-accent:#ffe16d;--card-glow:#f9d04733}
+.work-section .project-card[data-card-hero],.work-section .project-card[data-card-hero]:nth-child(3n+2){background:var(--card-bg);border-top-color:var(--card-accent);border-bottom-color:#aab6c442;min-height:440px}
+.work-section .project-card[data-card-hero]:hover,.work-section .project-card[data-card-hero]:focus-within{background:var(--card-bg);border-color:var(--card-accent);box-shadow:none}
+.work-section .project-card[data-card-hero] .card-content{min-height:440px;align-content:start}
+.work-section .project-card[data-card-hero] .card-top .mono{color:var(--card-accent)}
+.work-section .project-card[data-card-hero] .project-overview{align-self:center}
+.work-section .project-card[data-card-hero] .card-bottom{margin-top:auto;align-self:end}
+.work-section .project-card[data-card-hero] .open-project span,.work-section .index-card[data-card-hero] .card-arrow{color:var(--card-accent)}
+.work-section .project-card[data-card-hero] .open-project:hover{color:var(--card-accent)}
+.work-section .project-card[data-card-hero] .open-project:focus-visible{outline-color:var(--card-accent)}
+.project-character{position:relative;isolation:isolate;display:grid;place-items:center;height:235px;margin:18px 0 0;padding:8px 12px 25px;pointer-events:none}
+.project-character img{position:relative;z-index:2;width:100%;height:100%;max-width:260px;max-height:202px;object-fit:contain;filter:drop-shadow(0 13px 15px #0006);transition:transform .6s cubic-bezier(.2,.7,.25,1),filter .6s;transform-origin:50% 80%}
+.project-character figcaption{position:absolute;bottom:0;left:0;right:0;text-align:center;font:12px/1.6 var(--sans);color:var(--card-accent)}
+.project-signature{position:absolute;inset:28px 22% 36px;z-index:0;pointer-events:none;transition:transform .75s ease,opacity .6s ease;opacity:.4}
+.project-signature::before,.project-signature::after{content:'';position:absolute;pointer-events:none}
+[data-card-hero="ironman"] .project-signature{border:1px solid #8bdfff;border-radius:50%;background:radial-gradient(circle,#84e2ff28,transparent 65%)}
+[data-card-hero="ironman"] .project-signature::after{inset:13%;border:1px dashed #8bdfff;border-radius:50%}
+[data-card-hero="captain"] .project-signature{border-radius:50%;background:radial-gradient(circle,transparent 0 30%,#9dc3e677 31% 33%,transparent 34% 46%,#d0545680 47% 51%,transparent 52% 63%,#dce7f080 64% 66%,transparent 67%)}
+[data-card-hero="spiderman"] .project-signature{inset:48px 2% 33px;background:url('/assets/marvel/web-hammock.svg') center/100% 100% no-repeat;opacity:.65;transform:rotate(-7deg)}
+[data-card-hero="strange"] .project-signature{border:2px dotted #ffbc6b;border-radius:50%}
+[data-card-hero="strange"] .project-signature::after{inset:15%;border:1px solid #ffbc6b;border-radius:50%}
+[data-card-hero="panther"] .project-signature{inset:8px 4% 30px;background:url('/assets/marvel/vibranium-veins.svg') center/100% 100% no-repeat;opacity:.45}
+[data-card-hero="thor"] .project-signature{background:radial-gradient(ellipse,#d2e97a22,transparent 70%)}
+[data-card-hero="thor"] .project-signature::before{inset:-12% 24% 0 42%;background:#ffe18a;clip-path:polygon(50% 0,16% 37%,44% 37%,8% 70%,36% 65%,22% 100%,86% 52%,55% 53%,82% 23%,57% 27%);opacity:.65}
+[data-card-hero="hulk"] .project-signature{inset:45% 4% 25px;background:repeating-conic-gradient(from 12deg at 50% 80%,transparent 0deg 24deg,#b7eb9280 25deg 26deg,transparent 27deg 39deg);clip-path:polygon(0 30%,12% 0,30% 37%,44% 10%,60% 42%,75% 0,87% 35%,100% 25%,100% 100%,0 100%);transform:scale(.94);opacity:.45}
+[data-card-hero="antman"] .project-signature{border:1px solid #ff918180;border-radius:50%;transform:scale(.78)}
+[data-card-hero="antman"] .project-signature::before{inset:15%;border:1px solid #d8e5f080;border-radius:50%}
+[data-card-hero="antman"] .project-signature::after{inset:32%;border:1px solid #ff918180;border-radius:50%}
+[data-card-hero="loki"] .project-signature{background:linear-gradient(90deg,transparent,#68f4b060,transparent);clip-path:polygon(10% 0,28% 36%,40% 52%,40% 100%,60% 100%,60% 52%,72% 36%,90% 0,86% 30%,75% 57%,60% 70%,60% 100%,40% 100%,40% 70%,25% 57%,14% 30%);opacity:.65}
+[data-card-hero="scarletwitch"] .project-signature{inset:14px 12% 28px;border-radius:50%;background:radial-gradient(ellipse,transparent 35%,#ff336680 49%,transparent 65%);transform:scale(.9);opacity:.5}
+[data-card-hero="scarletwitch"] .project-signature::after{inset:23%;border:1px solid #ff6b9480;transform:rotate(45deg)}
+[data-card-hero="vision"] .project-signature{inset:26px 23% 40px;border:1px solid #edcc7b;transform:rotate(45deg) scale(.72);background:radial-gradient(circle,#ebd48750,transparent 70%)}
+[data-card-hero="vision"] .project-signature::after{inset:14%;border:1px solid #8de0b480}
+[data-card-hero="hawkeye"] .project-signature{border:1px solid #c79aff;border-radius:50%}
+[data-card-hero="hawkeye"] .project-signature::before{inset:22%;border:1px solid #c79aff;border-radius:50%}
+[data-card-hero="hawkeye"] .project-signature::after{inset:-12%;background:linear-gradient(90deg,transparent calc(50% - .5px),#c79aff calc(50% - .5px),#c79aff calc(50% + .5px),transparent calc(50% + .5px)),linear-gradient(transparent calc(50% - .5px),#c79aff calc(50% - .5px),#c79aff calc(50% + .5px),transparent calc(50% + .5px));opacity:.65}
+[data-card-hero="blackwidow"] .project-signature{inset:20px 14% 28px;background:linear-gradient(125deg,transparent 44%,#6cccff99 46%,transparent 48%),linear-gradient(55deg,transparent 51%,#6cccff99 53%,transparent 55%)}
+[data-card-hero="blackwidow"] .project-signature::after{inset:30% 35%;background:#e46e6280;clip-path:polygon(0 0,100% 0,60% 50%,100% 100%,0 100%,40% 50%)}
+[data-card-hero="wolverine"] .project-signature{inset:18px 12% 30px;background:linear-gradient(120deg,transparent 30%,#dfebff80 31%,transparent 32%,transparent 46%,#dfebff80 47%,transparent 48%,transparent 62%,#dfebff80 63%,transparent 64%);transform:translateX(-7px);opacity:.5}
+.project-card:is(:hover,:focus-within) .project-character img{transform:translateY(-7px);filter:drop-shadow(0 16px 17px #0006) drop-shadow(0 0 14px var(--card-glow))}
+.project-card:is(:hover,:focus-within) .project-signature{opacity:.7}
+[data-card-hero="ironman"]:is(:hover,:focus-within) .project-signature{transform:scale(1.06) rotate(12deg)}
+[data-card-hero="captain"]:is(:hover,:focus-within) .project-signature{transform:rotate(14deg) scale(1.04)}
+[data-card-hero="captain"]:is(:hover,:focus-within) .project-character img{transform:translate(5px,-4px)}
+[data-card-hero="spiderman"]:is(:hover,:focus-within) .project-signature{transform:rotate(0) scale(1.06);opacity:.9}
+[data-card-hero="spiderman"]:is(:hover,:focus-within) .project-character img{transform:translateY(-5px) rotate(-3deg)}
+[data-card-hero="strange"]:is(:hover,:focus-within) .project-signature{transform:rotate(30deg)}
+[data-card-hero="panther"]:is(:hover,:focus-within) .project-signature{transform:scale(1.04);opacity:.85}
+[data-card-hero="thor"]:is(:hover,:focus-within) .project-signature{transform:translateY(-8px);opacity:.85}
+[data-card-hero="hulk"]:is(:hover,:focus-within) .project-signature{transform:scale(1.1);opacity:.8}
+[data-card-hero="hulk"]:is(:hover,:focus-within) .project-character img{transform:translateY(-3px) scale(1.03)}
+[data-card-hero="antman"]:is(:hover,:focus-within) .project-signature{transform:scale(1.06);opacity:.8}
+[data-card-hero="antman"]:is(:hover,:focus-within) .project-character img{transform:translateY(-5px) scale(.88)}
+[data-card-hero="loki"]:is(:hover,:focus-within) .project-signature{transform:translateY(-5px) scaleX(1.1);opacity:.9}
+[data-card-hero="scarletwitch"]:is(:hover,:focus-within) .project-signature{transform:scale(1.06) rotate(12deg);opacity:.85}
+[data-card-hero="vision"]:is(:hover,:focus-within) .project-signature{transform:rotate(45deg) scale(.82);opacity:.8}
+[data-card-hero="vision"]:is(:hover,:focus-within) .project-character img{transform:translateY(-12px)}
+[data-card-hero="hawkeye"]:is(:hover,:focus-within) .project-signature{transform:scale(.94);opacity:.9}
+[data-card-hero="blackwidow"]:is(:hover,:focus-within) .project-signature{transform:scale(1.08);opacity:.9}
+[data-card-hero="wolverine"]:is(:hover,:focus-within) .project-signature{transform:translateX(7px);opacity:.9}
+.work-section .index-card[data-card-hero]{grid-template-columns:72px minmax(0,.85fr) minmax(0,1.15fr) 24px;background:var(--card-bg);border-left:2px solid var(--card-accent)}
+.work-section .index-card[data-card-hero]:hover,.work-section .index-card[data-card-hero]:focus-visible{background:var(--card-bg);border-bottom-color:var(--card-accent);outline-color:var(--card-accent)}
+.index-visual{position:relative;display:grid;place-items:center;min-height:98px;padding-bottom:20px}
+.index-visual img{width:65px;height:78px;object-fit:contain;pointer-events:none}
+.index-visual .index-number{position:absolute;bottom:0}
+.work-section .index-card[data-card-hero] .index-category{color:var(--card-accent)}
+.project-reader-header{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:30px;align-items:center;margin-bottom:28px;border-bottom:1px solid #71809844;padding-bottom:25px}
+.project-reader-header .detail-title{margin-bottom:12px}
+.project-reader-header img{width:150px;height:180px;object-fit:contain;pointer-events:none}
+.project-reader .project-hero-name{font:12px/1.7 var(--sans);color:var(--card-accent);margin:0}
+.project-reader .detail-kicker .eyebrow,.project-reader .detail-section h3{color:var(--card-accent)}
+.reading-mode .project-character img,.reduced-motion .project-character img,.motion-paused .project-character img,.modal-open .project-character img{transform:none!important;transition:none;filter:drop-shadow(0 13px 15px #0006)}
+.reading-mode .project-signature,.reduced-motion .project-signature,.motion-paused .project-signature,.modal-open .project-signature{transform:none!important;transition:none;opacity:.35!important}
+@media(max-width:760px){
+ .work-section .project-card[data-card-hero],.work-section .project-card[data-card-hero] .card-content{min-height:0}
+ .project-character{height:195px;margin-top:15px;padding-bottom:24px}
+ .project-character img{max-height:160px;max-width:230px}
+ .work-section .index-card[data-card-hero]{grid-template-columns:48px minmax(0,1fr) 18px}
+ .index-visual{min-height:80px}
+ .index-visual img{width:45px;height:60px}
+ .project-reader-header{grid-template-columns:minmax(0,1fr) 72px;gap:16px}
+ .project-reader-header img{width:72px;height:120px}
+ .project-reader-header .detail-title{font-size:clamp(27px,7vw,36px);padding:0;overflow-wrap:anywhere}
+}
+@media(prefers-reduced-motion:reduce){.project-character img,.project-signature{transition:none!important;transform:none!important}}

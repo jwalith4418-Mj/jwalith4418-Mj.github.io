@@ -1,0 +1,55 @@
+Reviewed source: AI CROP DOCTOR/AttendanceTrackerPro.zip :: AttendanceTrackerPro/app/src/main/java/com/attendance/tracker/data/model/SubjectAttendance.java
+Source SHA-256: e099ef527343318d4e98c224376d263aa76466bd764b2d02fbe24f758457cfa0
+Scope: Selected prototype source; not a complete application or validated deployment.
+
+---
+package com.attendance.tracker.data.model;
+
+/**
+ * Computed attendance summary for a single subject.
+ * Pure data object — all percentage / missable / required calculations
+ * are done in the constructor so the UI only reads pre-computed fields.
+ */
+public class SubjectAttendance {
+    private final String subject;
+    private final String branch;
+    private final String batch;
+    private final int totalClasses;
+    private final int attended;
+    private final int leaves;
+    private final double percentage;
+    private final int missableClasses;   // how many more can be missed (if ≥ 75%)
+    private final int requiredClasses;   // how many must attend to reach 75% (if < 75%)
+
+    public SubjectAttendance(String subject, String branch, String batch,
+                             int totalClasses, int attended, int leaves) {
+        this.subject = subject;
+        this.branch = branch;
+        this.batch = batch;
+        this.totalClasses = totalClasses;
+        this.attended = attended;
+        this.leaves = leaves;
+
+        this.percentage = totalClasses > 0 ? ((double) attended / totalClasses) * 100.0 : 0.0;
+
+        if (percentage >= 75.0) {
+            this.missableClasses = totalClasses > 0
+                    ? (int) Math.floor((attended - 0.75 * totalClasses) / 0.75)
+                    : 0;
+            this.requiredClasses = 0;
+        } else {
+            this.requiredClasses = (int) Math.ceil((0.75 * totalClasses - attended) / 0.25);
+            this.missableClasses = 0;
+        }
+    }
+
+    public String getSubject()        { return subject; }
+    public String getBranch()         { return branch; }
+    public String getBatch()          { return batch; }
+    public int getTotalClasses()      { return totalClasses; }
+    public int getAttended()          { return attended; }
+    public int getLeaves()            { return leaves; }
+    public double getPercentage()     { return percentage; }
+    public int getMissableClasses()   { return missableClasses; }
+    public int getRequiredClasses()   { return requiredClasses; }
+}

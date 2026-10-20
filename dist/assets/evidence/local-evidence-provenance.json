@@ -1,0 +1,162 @@
+[
+  {
+    "project": "cropdoctor",
+    "source": "project/AI CROP DOCTOR/CropDoctor_Report_2026.pdf",
+    "published": "cropdoctor-project-report-2026.pdf",
+    "kind": "design-pdf",
+    "bytes": 969992,
+    "sha256": "ba17468f5a09e501425314c85579e15dea9f7ac53e925315b7e3fbb4ef18a080",
+    "checked_on": "2026-10-20",
+    "scope": "Team course report; reported capabilities and impact are not independently validated."
+  },
+  {
+    "project": "agtech-intelligence-concept",
+    "source": "project/AGTECH/Early Farmer Validation.pdf",
+    "published": "agtech-early-farmer-discovery.pdf",
+    "kind": "design-pdf",
+    "bytes": 13691,
+    "sha256": "5e0883d25955e47e3415bb886690dae2dead4300245f3453d24480d0efc58695",
+    "checked_on": "2026-10-20",
+    "scope": "Document-reported interviews with three farmers; explicitly not statistically significant pilot validation."
+  },
+  {
+    "project": "cognitiveos-aios",
+    "source": "project/AI OS/CognitiveOS.pdf",
+    "published": "cognitiveos-founding-document.pdf",
+    "kind": "design-pdf",
+    "bytes": 149427,
+    "sha256": "630f5c4f2be00eb7c6722b8784ad044a5e1eb0eaba6a29cd028191e2e1af71c0",
+    "checked_on": "2026-10-20",
+    "scope": "Product-vision and architecture presentation; its scale, market and performance claims are unverified."
+  },
+  {
+    "project": "aquagen-systems",
+    "source": "project/AWS/Coastal_AWG_Engineering_Report.pdf",
+    "published": "aquagen-coastal-engineering-study.pdf",
+    "kind": "design-pdf",
+    "bytes": 28718,
+    "sha256": "53923ec5d550f5e1d5d61510d1e8a1e136ab81ede11515e525e42fb25a2c868a",
+    "checked_on": "2026-10-20",
+    "scope": "Concept engineering assumptions and proposed validation; not measured prototype yields or certified water quality."
+  },
+  {
+    "project": "aquacore-hydraulic-desalination",
+    "source": "project/HYDRAULIC INTENSIFIER SEAWATER PURIFIER/desalination_startup_report.pdf",
+    "published": "aquacore-early-desalination-study.pdf",
+    "kind": "design-pdf",
+    "bytes": 18394,
+    "sha256": "5bdf096a901a4633442f32e658b1821eff58f9bcad284ef098a4647228f8debe",
+    "checked_on": "2026-10-20",
+    "scope": "Related early desalination concept, not a tested hydraulic-intensifier design. No prototype or laboratory validation established."
+  },
+  {
+    "project": "climaverse",
+    "source": "hackathon/ISRO/2026H2S06BAH-P37593.pdf",
+    "published": "climaverse-hackathon-participation.pdf",
+    "kind": "participation-certificate",
+    "bytes": 3559670,
+    "sha256": "5917d104613ae9158b9d85abbb7525ca06a92242803478de0886cc1b6399f789",
+    "checked_on": "2026-10-20",
+    "scope": "Participation and idea submission only; not a technical research result or winner/finalist claim."
+  },
+  {
+    "project": "cdis",
+    "source": "hackathon/AI resume/CDIS_MVP_v2.0/cdis/app/services/decision.py",
+    "published": "cdis-alignment-source.txt",
+    "kind": "source-excerpt",
+    "bytes": 1503,
+    "sha256": "fb74037fa9b595a901a0e544f6c7e52c481b958c7d154186f163101f3e936a81",
+    "checked_on": "2026-10-20",
+    "scope": "Selected source only; not a complete application or independent result."
+  },
+  {
+    "project": "aletheia",
+    "source": "hackathon/IITM/aletheia/aletheia/aletheia/pipeline.py",
+    "published": "aletheia-pipeline-source.txt",
+    "kind": "source-excerpt",
+    "bytes": 7599,
+    "sha256": "d1eb5518b3e36df80a818bfeb5dd3e072da1a1d1017c09d6f07345646b97ed23",
+    "checked_on": "2026-10-20",
+    "scope": "Selected source only; not a complete application or independent result."
+  },
+  {
+    "project": "adaptive-learning",
+    "source": "project/OVAEL_v0.01_FINAL/OVAEL_v0.01/src/adaptive_backend/adaptive.py",
+    "published": "ovael-adaptive-source.txt",
+    "kind": "source-excerpt",
+    "bytes": 26877,
+    "sha256": "269943ddd3f85cd2423be6399a7970be25118f58272da1a1f3ce9a923e0edbca",
+    "checked_on": "2026-10-20",
+    "scope": "Selected source only; not a complete application or independent result."
+  },
+  {
+    "project": "openmythos-extension",
+    "source": "project/OPEN MTHYOS/OpenMythos_v4/OpenMythos_v4/open_mythos/variants.py",
+    "published": "openmythos-configuration-source.txt",
+    "kind": "source-excerpt",
+    "bytes": 5985,
+    "sha256": "e786d69f32599478166d373207931ba0a8126f98f95e3e47dbf31be7ca602374",
+    "checked_on": "2026-10-20",
+    "scope": "Selected source only; not a complete application or independent result."
+  },
+  {
+    "project": "openmythos-extension",
+    "source": "project/OPEN MTHYOS/OpenMythos_v4/OpenMythos_v4/LICENSE",
+    "published": "openmythos-supplied-license.txt",
+    "kind": "license-notice",
+    "bytes": 1066,
+    "sha256": "5f57d217ea5645ea1fe16380c351a806ae00169a0dcdb6af5612713ab3cfa3b5",
+    "checked_on": "2026-10-20",
+    "scope": "Verbatim supplied MIT notice; README license wording differs."
+  },
+  {
+    "project": "climaverse",
+    "source": "ISRO/CLIMAVERSE.zip :: climaverse/climaverse/twin/ledger.py",
+    "published": "climaverse-ledger-source.txt",
+    "kind": "source-excerpt",
+    "bytes": 2118,
+    "sha256": "4ab98f66bf952d85cfb70426d4c273d57d1b6511c43b7eb8fdcc7f1be9908a17",
+    "checked_on": "2026-10-20",
+    "scope": "Selected prototype component; no full application test."
+  },
+  {
+    "project": "attendance-tracker-pro",
+    "source": "AI CROP DOCTOR/AttendanceTrackerPro.zip :: AttendanceTrackerPro/app/src/main/java/com/attendance/tracker/data/model/SubjectAttendance.java",
+    "published": "attendance-summary-source.txt",
+    "kind": "source-excerpt",
+    "bytes": 2403,
+    "sha256": "99c290a9b69d5b861861490f3beb539cffe9527ad0a9f2f20879d0eceb7a233d",
+    "checked_on": "2026-10-20",
+    "scope": "Selected prototype component; no full application test."
+  },
+  {
+    "project": "cdis",
+    "source": "AI resume/CDIS_MVP_v2.0/cdis/docs/ARCHITECTURE.md",
+    "published": "cdis-architecture.md",
+    "kind": "architecture-notes",
+    "bytes": 27935,
+    "sha256": "022628622e183337928f75d998e06c5b83e88a1861b24062a6ac9d30e7bdcaab",
+    "checked_on": "2026-10-20",
+    "scope": "Supplied architecture documentation; stated outcomes have not been independently reproduced."
+  },
+  {
+    "project": "aletheia",
+    "source": "IITM/aletheia/aletheia/ARCHITECTURE.md",
+    "published": "aletheia-architecture.md",
+    "kind": "architecture-notes",
+    "bytes": 5348,
+    "sha256": "08706f6fb992d401d3a75e26a25529dcaf36df713e6c0e593066a52733f41a77",
+    "checked_on": "2026-10-20",
+    "scope": "Supplied architecture documentation; stated outcomes have not been independently reproduced."
+  },
+  {
+    "project": "adaptive-learning",
+    "source": "OVAEL_v0.01_FINAL/OVAEL_v0.01/README.md",
+    "published": "ovael-prototype-notes.md",
+    "kind": "architecture-notes",
+    "bytes": 11889,
+    "sha256": "ea22204722d6df220500f967f831b4e669f23af24ddc2fbd687ba7bd71762fc1",
+    "checked_on": "2026-10-20",
+    "scope": "Supplied architecture documentation; stated outcomes have not been independently reproduced."
+  }
+]

@@ -1,0 +1,56 @@
+/* A focused closing chapter in the shield's navy, red and silver palette. */
+body[data-active-hero="captain"]{--scene-accent:#e5edf5}
+.contact-section{background:radial-gradient(ellipse at 82% 34%,#173b5a60,transparent 42%),radial-gradient(ellipse at 100% 80%,#8e25302b,transparent 45%),#070e19;padding-top:72px;min-height:0;justify-content:flex-start;scroll-margin-top:100px}
+.environment-captain{background:url('/assets/marvel/captain-insignia.svg') right top/1600px 850px no-repeat;opacity:1}
+.environment-captain canvas{z-index:1}
+.contact-kicker{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:0 0 21px;border-bottom:1px solid #a2b6cc25;color:#8b9db3;font:8px var(--mono);letter-spacing:.13em}
+.contact-kicker>span:first-child{display:flex;align-items:center;gap:10px;color:#cad7e5}
+.contact-kicker>span:first-child::before{content:'';width:5px;height:5px;background:#e75858;border-radius:50%}
+.contact-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);align-items:center;gap:5vw;padding:38px 0 80px;min-height:580px}
+.contact-layout>.contact-content{grid-column:1;grid-row:1;width:100%;max-width:700px;text-align:left;padding:0;margin:0}
+.contact-content .eyebrow{color:#a5b8ce;font-size:8px;letter-spacing:.1em;margin:0 0 23px}
+.contact-content h2{font:600 clamp(52px,5.7vw,82px)/1.04 var(--sans);letter-spacing:-.055em;margin:0 0 25px;color:#f0f4f8}
+.contact-content h2 em{color:#ef7779;font-style:normal}
+.contact-content>p:not(.eyebrow):not(#copy-status){font:14px/1.85 var(--sans);color:#adbed0;max-width:420px;margin-bottom:25px}
+.contact-email{display:inline-flex;align-items:center;justify-content:space-between;gap:40px;min-height:54px;padding:15px 22px;border:1px solid #e4585e;border-radius:5px;background:#c73743;color:#fff;font:500 13px var(--sans);letter-spacing:0;margin:0;transition:background .2s,border-color .2s}
+.contact-email span{font-size:20px;color:#fff}
+.contact-email:hover{color:#fff;background:#df4954;border-color:#f19a9c}
+.contact-address{display:block;font:12px var(--mono);color:#9cafc4;letter-spacing:0;margin:16px 0 0;user-select:text;overflow-wrap:anywhere}
+.contact-actions{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin-top:30px;max-width:650px}
+.contact-actions .text-link{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 12px;border:1px solid #7b96b33b;border-radius:5px;background:#10203366;color:#c8d5e3;font:11px var(--sans);white-space:nowrap;min-height:44px;text-align:left;transition:background .2s,border-color .2s}
+.contact-actions .text-link:hover{background:#1b3148;border-color:#b2c9df80;color:#fff}
+.contact-actions .text-link span{color:#8ba4be;font-size:13px}
+.contact-content #copy-status{min-height:18px;height:auto;margin:12px 0 0;color:#b9d8ed;font-size:8px;line-height:1.6}
+.contact-layout>.art-captain{grid-column:2;grid-row:1;width:100%;height:clamp(440px,34vw,540px);max-width:410px;aspect-ratio:auto;margin:0;justify-self:center;--power:#d9e7f4}
+.art-captain .power-ring,.art-captain .power-trails{display:none}
+.art-captain .hero-figure img{filter:drop-shadow(0 22px 28px #000a) drop-shadow(0 0 17px #769cbd18)}
+.art-captain .hero-identity>span{color:#dfe8f1;font-size:14px}
+.art-captain .hero-identity small{color:#8fa7c1;font-size:6px}
+.art-captain .hero-power-label{bottom:4px;right:0;background:#0a1524eb;border-color:#a2b8cd40;color:#d9e7f4;font-size:8px;padding:11px 12px}
+.contact-section footer{margin-top:0;padding:25px 0 22px;border-color:#a2b6cc25;gap:20px}
+.contact-section .footer-title{font:500 14px var(--sans);color:#c4d2e0}
+.contact-section footer .mono{color:#8298b0;font-size:8px}
+.contact-section .art-credit{margin:0;color:#6f86a0;padding:0 0 185px;font-size:7px;line-height:1.9}
+.reading-mode .contact-section,.reduced-motion .contact-section{background:#070e19}
+.reading-mode .contact-section .art-credit,.reduced-motion .contact-section .art-credit{padding-bottom:90px}
+@media(max-width:1100px){.contact-layout{gap:30px;grid-template-columns:minmax(0,1.15fr) minmax(240px,.85fr)}.contact-content h2{font-size:clamp(50px,6vw,68px)}.contact-layout>.art-captain{height:470px}.contact-actions{grid-template-columns:repeat(2,minmax(0,1fr));max-width:380px}}
+@media(max-width:760px){
+ .contact-section{padding-top:50px;scroll-margin-top:85px}
+ .contact-kicker{font-size:7px;letter-spacing:.05em;padding-bottom:18px}
+ .contact-kicker>span:last-child{display:none}
+ .contact-layout{display:flex;flex-direction:column;align-items:stretch;gap:35px;min-height:0;padding:30px 0 90px}
+ .contact-layout>.contact-content{order:0}
+ .contact-content h2{font-size:clamp(46px,12vw,68px);margin-bottom:22px}
+ .contact-content>p:not(.eyebrow):not(#copy-status){font-size:13px}
+ .contact-email{min-height:52px;width:min(100%,320px);gap:25px}
+ .contact-address{font-size:11px}
+ .contact-actions{grid-template-columns:repeat(2,minmax(0,1fr));max-width:100%;margin-top:25px}
+ .contact-actions .text-link{font-size:11px;min-height:46px}
+ .contact-layout>.art-captain{order:1;height:440px;max-width:330px;margin:0 auto}
+ .art-captain .hero-identity{gap:10px}
+ .contact-section footer{flex-wrap:wrap;justify-content:flex-start;gap:15px;padding:22px 0}
+ .contact-section footer a{margin-left:0}
+ .contact-section footer .mono{font-size:7px}
+ .contact-section .art-credit{padding-bottom:225px}
+ .environment-captain{background-size:1150px 1050px;background-position:70% 140px}
+}

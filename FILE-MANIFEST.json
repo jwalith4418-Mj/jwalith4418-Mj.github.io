@@ -1,0 +1,1014 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 89,
+      "sha256": "9b79ff8546d42f3308fc564cb4b58836c27c6140159b7bb23d9341f541576954"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 1191,
+      "sha256": "a4178ca840b4a2acb0de2047dd10132154d16580fdae371c38ddf3b65e6d659f"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 107,
+      "sha256": "659923b6c6887b399748af516245b42df0e26f5cad61b903843fcc54e0e3f806"
+    },
+    {
+      "path": ".vercelignore",
+      "bytes": 71,
+      "sha256": "58e62d03a68ec2e613ffd5d7f6b02f8058561e71f051e784bf99397140dd4f82"
+    },
+    {
+      "path": "FINAL-AUDIT.md",
+      "bytes": 2598,
+      "sha256": "b6ea07670e624213c6decedfc29344cf66637067c3477a48a899ad66c35cb067"
+    },
+    {
+      "path": "LOCAL-WORK-REVIEW.md",
+      "bytes": 9708,
+      "sha256": "5cbcd4b2c0f823b1518972c48d81fbbc0df96af242bd3703822624829f04a611"
+    },
+    {
+      "path": "OPEN-IN-ANTIGRAVITY.md",
+      "bytes": 488,
+      "sha256": "2a0d25c06de139b837bc86b6ad8c2ef91499d7a82420bee3895a4ebe9dadd2a3"
+    },
+    {
+      "path": "PACKAGE-CONTENTS.md",
+      "bytes": 1403,
+      "sha256": "f709d97f1c29c3b960b3d536e96718c5b3e3572f6586ecee090d314afce0353d"
+    },
+    {
+      "path": "PROJECTS.md",
+      "bytes": 6663,
+      "sha256": "5d70259cf541ff4dd2922c96b8bee89a2352d05f09d6b403c11c7f3eb8c7befb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3635,
+      "sha256": "2f2c20963026175d4e4e8614733fce21e6f699cd17c85cae3ae5bf8b3fef8489"
+    },
+    {
+      "path": "UPGRADE-REPORT.md",
+      "bytes": 11987,
+      "sha256": "90cb6494396e80154adbc6ee556d8a083353fafe3326ddf1c9d2547164050899"
+    },
+    {
+      "path": "dist/activity-budget.js",
+      "bytes": 1032,
+      "sha256": "0ddd5a98e4cf098b9fa390fb7caabd13b6430b4ae5f81b068efb23050508f49c"
+    },
+    {
+      "path": "dist/app.js",
+      "bytes": 21647,
+      "sha256": "acfbdf940988f59663f33302f060842078e7ff814218d19c601cb7ed40487151"
+    },
+    {
+      "path": "dist/arcade-entry.css",
+      "bytes": 1553,
+      "sha256": "ba29f04df005c8d6cdd2465d426513ea86fdbff5212aa67d196d1d92ca05dd14"
+    },
+    {
+      "path": "dist/arcade/arcade.css",
+      "bytes": 9502,
+      "sha256": "b77e8b6ba3e8472b9cd8e7a4d566915080fa1714fa22077678992a1db93fc584"
+    },
+    {
+      "path": "dist/arcade/arcade.js",
+      "bytes": 14603,
+      "sha256": "f246604088e7a85dcbba8ab35c8706ea8b46bd30a516313704f9d5c62f3ce512"
+    },
+    {
+      "path": "dist/arcade/game-engine.js",
+      "bytes": 4354,
+      "sha256": "55a38e0a8ce57a252adf9102ad210f55d713f957cea29dc105be20f1e557f055"
+    },
+    {
+      "path": "dist/arcade/identity-mobile.css",
+      "bytes": 3034,
+      "sha256": "d2ece5f8b45508c7e22c7c4c286286e45c02525821913e36e08e82270b99ed3f"
+    },
+    {
+      "path": "dist/arcade/index.html",
+      "bytes": 6617,
+      "sha256": "bd341b80dea0a49ed5d4c24d9fc13a8555664559d835fd75e517afcf40229395"
+    },
+    {
+      "path": "dist/assets/Jwalith-Resume.pdf",
+      "bytes": 57272,
+      "sha256": "a23d88ba62ea7c2eb3f9b3a2dc7923654c6e13c94e8c6faaadffa55b840a22aa"
+    },
+    {
+      "path": "dist/assets/evidence/additional-component-checks.json",
+      "bytes": 834,
+      "sha256": "57bc4892c14d6d9a46d937b7dcb7d9cf4231d8a3412940b3c2dbcb3c6cac775c"
+    },
+    {
+      "path": "dist/assets/evidence/agtech-early-farmer-discovery.pdf",
+      "bytes": 13691,
+      "sha256": "5e0883d25955e47e3415bb886690dae2dead4300245f3453d24480d0efc58695"
+    },
+    {
+      "path": "dist/assets/evidence/aletheia-architecture.md",
+      "bytes": 5348,
+      "sha256": "08706f6fb992d401d3a75e26a25529dcaf36df713e6c0e593066a52733f41a77"
+    },
+    {
+      "path": "dist/assets/evidence/aletheia-pipeline-source.txt",
+      "bytes": 7599,
+      "sha256": "d1eb5518b3e36df80a818bfeb5dd3e072da1a1d1017c09d6f07345646b97ed23"
+    },
+    {
+      "path": "dist/assets/evidence/aquacore-early-desalination-study.pdf",
+      "bytes": 18394,
+      "sha256": "5bdf096a901a4633442f32e658b1821eff58f9bcad284ef098a4647228f8debe"
+    },
+    {
+      "path": "dist/assets/evidence/aquagen-coastal-engineering-study.pdf",
+      "bytes": 28718,
+      "sha256": "53923ec5d550f5e1d5d61510d1e8a1e136ab81ede11515e525e42fb25a2c868a"
+    },
+    {
+      "path": "dist/assets/evidence/attendance-summary-source.txt",
+      "bytes": 2403,
+      "sha256": "99c290a9b69d5b861861490f3beb539cffe9527ad0a9f2f20879d0eceb7a233d"
+    },
+    {
+      "path": "dist/assets/evidence/blackbox-engine.mjs",
+      "bytes": 18053,
+      "sha256": "c531369738c5fa0ded52a000cf9844d04e1f483ee2c32d4fc0d6b93792318279"
+    },
+    {
+      "path": "dist/assets/evidence/blackbox-overview.md",
+      "bytes": 7774,
+      "sha256": "adcead3df6bc5ee564d5182c43fbddee081702d7f027fb9412ac423811e9ba88"
+    },
+    {
+      "path": "dist/assets/evidence/blackbox-provenance.json",
+      "bytes": 818,
+      "sha256": "5d4474a7c61a884336a75e0e10cec1b50c12d530e2ec2226dd3af289ef373113"
+    },
+    {
+      "path": "dist/assets/evidence/blackbox-technical-report.md",
+      "bytes": 15670,
+      "sha256": "cace3517cc79413b37a1d8a48b12467b5e1bdc72688787313a7b03ccf3d141a9"
+    },
+    {
+      "path": "dist/assets/evidence/blackbox-third-party-notices.md",
+      "bytes": 645,
+      "sha256": "eec9194d3a85447dafebbe6e8ad4f9ff88478e424b18311a05860096766e3e10"
+    },
+    {
+      "path": "dist/assets/evidence/cdis-alignment-source.txt",
+      "bytes": 1503,
+      "sha256": "fb74037fa9b595a901a0e544f6c7e52c481b958c7d154186f163101f3e936a81"
+    },
+    {
+      "path": "dist/assets/evidence/cdis-architecture.md",
+      "bytes": 27935,
+      "sha256": "022628622e183337928f75d998e06c5b83e88a1861b24062a6ac9d30e7bdcaab"
+    },
+    {
+      "path": "dist/assets/evidence/climaverse-hackathon-participation.pdf",
+      "bytes": 3559670,
+      "sha256": "5917d104613ae9158b9d85abbb7525ca06a92242803478de0886cc1b6399f789"
+    },
+    {
+      "path": "dist/assets/evidence/climaverse-ledger-source.txt",
+      "bytes": 2118,
+      "sha256": "4ab98f66bf952d85cfb70426d4c273d57d1b6511c43b7eb8fdcc7f1be9908a17"
+    },
+    {
+      "path": "dist/assets/evidence/cognitiveos-founding-document.pdf",
+      "bytes": 149427,
+      "sha256": "630f5c4f2be00eb7c6722b8784ad044a5e1eb0eaba6a29cd028191e2e1af71c0"
+    },
+    {
+      "path": "dist/assets/evidence/cropdoctor-demo-capture.webp",
+      "bytes": 64988,
+      "sha256": "9631c92bea931062e0a38d137251380e651cfcb8f3cc1371ef1adb998be84bdc"
+    },
+    {
+      "path": "dist/assets/evidence/cropdoctor-project-report-2026.pdf",
+      "bytes": 969992,
+      "sha256": "ba17468f5a09e501425314c85579e15dea9f7ac53e925315b7e3fbb4ef18a080"
+    },
+    {
+      "path": "dist/assets/evidence/cropdoctor-reviewed-excerpt.txt",
+      "bytes": 1336,
+      "sha256": "5829891c27afe7af3d4abdb11e9cfea231a65c3be6eeb19ef17de23532c0f677"
+    },
+    {
+      "path": "dist/assets/evidence/local-evidence-provenance.json",
+      "bytes": 7118,
+      "sha256": "22fb4b59b0cd870a36077583f5de2dafcbb45bbaf27d758d70e36b25dd3d38fa"
+    },
+    {
+      "path": "dist/assets/evidence/nexus-demo-capture.webp",
+      "bytes": 63348,
+      "sha256": "de089e8cb871d0d8a5081ca241627867664ae7f33cf785f0c07f3b78c06ece9a"
+    },
+    {
+      "path": "dist/assets/evidence/nexus-reviewed-excerpt.txt",
+      "bytes": 784,
+      "sha256": "bece952d23351fb595615c587223f2eee17a3915b642138472481568a005abd3"
+    },
+    {
+      "path": "dist/assets/evidence/openmythos-configuration-source.txt",
+      "bytes": 5985,
+      "sha256": "e786d69f32599478166d373207931ba0a8126f98f95e3e47dbf31be7ca602374"
+    },
+    {
+      "path": "dist/assets/evidence/openmythos-supplied-license.txt",
+      "bytes": 1066,
+      "sha256": "5f57d217ea5645ea1fe16380c351a806ae00169a0dcdb6af5612713ab3cfa3b5"
+    },
+    {
+      "path": "dist/assets/evidence/ovael-adaptive-source.txt",
+      "bytes": 26877,
+      "sha256": "269943ddd3f85cd2423be6399a7970be25118f58272da1a1f3ce9a923e0edbca"
+    },
+    {
+      "path": "dist/assets/evidence/ovael-prototype-notes.md",
+      "bytes": 11889,
+      "sha256": "ea22204722d6df220500f967f831b4e669f23af24ddc2fbd687ba7bd71762fc1"
+    },
+    {
+      "path": "dist/assets/evidence/tes-merged-contributions.json",
+      "bytes": 982,
+      "sha256": "2a0277790ace4b0c5734b7be841d660c58426d70bde128dfd8c37d61ebf57a4f"
+    },
+    {
+      "path": "dist/assets/evidence/verification.json",
+      "bytes": 4566,
+      "sha256": "8aeea3ee5c261eb0b0a8be331a06722ecc9b53519cb4263e6cfb784a2b27a664"
+    },
+    {
+      "path": "dist/assets/evidence/veritas-reviewed-excerpt.txt",
+      "bytes": 1037,
+      "sha256": "7d7862a209362ed2b92f5c1356c9c1e13c1fdc2dc7094b94d5c7dc49f6c5cb49"
+    },
+    {
+      "path": "dist/assets/jwalith-notebook.png",
+      "bytes": 50967,
+      "sha256": "3d6f7230f4484b951dc848030cc8e1a27e2f6b32bcb4f4da6d469d510eb693a0"
+    },
+    {
+      "path": "dist/assets/kungfu/courtyard.jpg",
+      "bytes": 241275,
+      "sha256": "9ba28e1f2f32c099589d92741b541532343322f5c8a86e582f22d48d800426ff"
+    },
+    {
+      "path": "dist/assets/kungfu/golden-reference.jpg",
+      "bytes": 48122,
+      "sha256": "4d58c23cdde0e64e7eecbb5964a4c12a06c4ed0fb37c2ca52f14d8a3f3ab066d"
+    },
+    {
+      "path": "dist/assets/kungfu/oogway-original-optimized.webp",
+      "bytes": 35702,
+      "sha256": "9060cb9a246f2ce632df5741dfb2ddb6c51c33ddb064e60b5eb3d624dee83d01"
+    },
+    {
+      "path": "dist/assets/kungfu/oogway-original.png",
+      "bytes": 359159,
+      "sha256": "b7dcca5abee432593fcdf095c412ecf4fbdacbd2557a944591a8228b22790d0b"
+    },
+    {
+      "path": "dist/assets/kungfu/oogway-original.webp",
+      "bytes": 208198,
+      "sha256": "b8bcfd5e71f0107c27419fb648d3f244a7945951dc32a53b95716b0bbb8b98e0"
+    },
+    {
+      "path": "dist/assets/kungfu/po-original-optimized.webp",
+      "bytes": 94760,
+      "sha256": "e5ad7c5d0c90f96c6df618a6e397679fd40ab99a278084002074719616dfd807"
+    },
+    {
+      "path": "dist/assets/kungfu/po-original.png",
+      "bytes": 1093632,
+      "sha256": "9f9e630f59eb755a238562a268610ec3890e41206798e70046e60d12354cea79"
+    },
+    {
+      "path": "dist/assets/kungfu/po-original.webp",
+      "bytes": 550074,
+      "sha256": "7cbc5ccaba2dfd9e17c08457a831bd9cc8907108b4b465515b3c5b59e987afb6"
+    },
+    {
+      "path": "dist/assets/kungfu/shifu-original-optimized.webp",
+      "bytes": 118120,
+      "sha256": "b4fc503f8699b23b90380696f2ed22e3e556bfe395d46762ee22f43efe02f3c7"
+    },
+    {
+      "path": "dist/assets/kungfu/shifu-original.png",
+      "bytes": 885760,
+      "sha256": "a8baceb657445647fad568e7fcbbd90b8f540134b2388a607e96a8ddce28f2e9"
+    },
+    {
+      "path": "dist/assets/kungfu/shifu-original.webp",
+      "bytes": 573512,
+      "sha256": "7e9ee64a3b41b660d1cf5791e999c9b3a05dde6d839ac80f3dc72dcaa6f5da01"
+    },
+    {
+      "path": "dist/assets/kungfu/temple.jpg",
+      "bytes": 240229,
+      "sha256": "df7988b6845bdbc527b8cc01cda805d61e011e26033665d22dbee7c92d4417af"
+    },
+    {
+      "path": "dist/assets/kungfu/tigress-original-optimized.webp",
+      "bytes": 39676,
+      "sha256": "15d6cb8b6b6902d58f9346a819c5a7c845cc20986d017667cdda630eee6e8951"
+    },
+    {
+      "path": "dist/assets/kungfu/tigress-original.png",
+      "bytes": 268288,
+      "sha256": "53a03156875ee3b376fc68756c580a38f7c461e0d27a5ecc7b28b6ced93f852f"
+    },
+    {
+      "path": "dist/assets/kungfu/tigress-original.webp",
+      "bytes": 162702,
+      "sha256": "afe76916a194d6912aa0fdf6828b0a7bdae923777a219555ea15f0d69cebf075"
+    },
+    {
+      "path": "dist/assets/marvel/antman-card-optimized.webp",
+      "bytes": 53680,
+      "sha256": "630aa0964b1ad8fd5f57ab22f1ee668281d74a872a6c215108065ffe94de7ca9"
+    },
+    {
+      "path": "dist/assets/marvel/antman-card.png",
+      "bytes": 582051,
+      "sha256": "99e173c6a9fa9c2e50c4a8195ef9a2e776fb1d9d6af43f320475ed953a6e5069"
+    },
+    {
+      "path": "dist/assets/marvel/asgard-horizon.svg",
+      "bytes": 1005,
+      "sha256": "7a02c808fad2d9bc8e520e041d81942fab41c5d4628e21c93cbe93cf5a015da9"
+    },
+    {
+      "path": "dist/assets/marvel/blackwidow-card-optimized.webp",
+      "bytes": 111542,
+      "sha256": "a8564290f064aff6285e3d7ef8b7324a1e04b8bb0a8220ef0a909e9c34320050"
+    },
+    {
+      "path": "dist/assets/marvel/blackwidow-card.png",
+      "bytes": 1488274,
+      "sha256": "3de1569a354fd85925d8fcfae8e6afcc8bde8503e3a1528828f9adc90fc61070"
+    },
+    {
+      "path": "dist/assets/marvel/captain-cutout-optimized.webp",
+      "bytes": 60422,
+      "sha256": "0c7eff00bb85b84fbedec3f89ab464286e164241f2eeaa9bf177fd20a9ae366b"
+    },
+    {
+      "path": "dist/assets/marvel/captain-cutout.png",
+      "bytes": 686080,
+      "sha256": "922273f83441b1e3fa3eac661adc12b891f0771dcf3c49641d7cf16d7ed3434d"
+    },
+    {
+      "path": "dist/assets/marvel/captain-insignia.svg",
+      "bytes": 650,
+      "sha256": "c4fd4bed076e54a50e59eb729995a1ed4983fed26c126c7a19190e7d41a319d9"
+    },
+    {
+      "path": "dist/assets/marvel/captain-scene.jpg",
+      "bytes": 526719,
+      "sha256": "213b5e93c03f13f7019d650fe178906dc9d1193c780a3626ec4be13f6f4bbeb8"
+    },
+    {
+      "path": "dist/assets/marvel/card-artwork-sources.json",
+      "bytes": 2689,
+      "sha256": "da7db1576282fec77135a20155410c896f085f6e1574308f551cc31c01f71ea3"
+    },
+    {
+      "path": "dist/assets/marvel/city.svg",
+      "bytes": 15388,
+      "sha256": "b4093b5b84c32adba09b0f5f3c1bb6606355a9ca82627eb31005805a46c74ce1"
+    },
+    {
+      "path": "dist/assets/marvel/hawkeye-card-optimized.webp",
+      "bytes": 120008,
+      "sha256": "94cc252b187cd5a47746e5106912d310d0e4179f4f32d556734c5ce671519e7b"
+    },
+    {
+      "path": "dist/assets/marvel/hawkeye-card.png",
+      "bytes": 8109301,
+      "sha256": "9e4306fa4767a19d5ad734cf46c3dd3d5ed079674024e7872a352b5794da0a47"
+    },
+    {
+      "path": "dist/assets/marvel/hawkeye-card.webp",
+      "bytes": 4603950,
+      "sha256": "81e397b2ab02203ccf566252af7bebbe98515d592ef5ecc5c6ba25c6d7e044b8"
+    },
+    {
+      "path": "dist/assets/marvel/hulk-card-optimized.webp",
+      "bytes": 143534,
+      "sha256": "1e86592e2a0740f570b9d28a8d9655584a812e8ad9dc485f283bf9137794811a"
+    },
+    {
+      "path": "dist/assets/marvel/hulk-card.png",
+      "bytes": 547504,
+      "sha256": "13477217b9fc35e3c8c375c059aa6c25346126d03e8c5dfef2ed9a803c18f2fd"
+    },
+    {
+      "path": "dist/assets/marvel/ironman-cutout-optimized.webp",
+      "bytes": 60670,
+      "sha256": "af3cba92c82e813332bef5d9ca4623301f368b37bdbc0e2ff2cbbdb9e1c21be6"
+    },
+    {
+      "path": "dist/assets/marvel/ironman-cutout.png",
+      "bytes": 802816,
+      "sha256": "13ef5c3ea563fc5429ceabd5313712c03edca545207dd4b95745f86643e10f2a"
+    },
+    {
+      "path": "dist/assets/marvel/ironman-scene.jpg",
+      "bytes": 35885,
+      "sha256": "918b6c9eb534c1504d3c3278a3a889ae337633a7188a67b07ba2158c44e1c857"
+    },
+    {
+      "path": "dist/assets/marvel/loki-card-optimized.webp",
+      "bytes": 96128,
+      "sha256": "f81cdf8f24650086e4da4bd226cb4dd1cddab00feedfa3625da72dde6d961b3e"
+    },
+    {
+      "path": "dist/assets/marvel/loki-card.png",
+      "bytes": 348741,
+      "sha256": "b63e080b8c8865816b0052f0930d4dc1438bd6f6000fae3367d63c8c174d6cc6"
+    },
+    {
+      "path": "dist/assets/marvel/panther-optimized.webp",
+      "bytes": 38306,
+      "sha256": "65dc1258a67eb1dd666779ed31f2b41917516e5d06ddb2c6e2bcbde2d601dcc9"
+    },
+    {
+      "path": "dist/assets/marvel/panther-reference.jpg",
+      "bytes": 66837,
+      "sha256": "22b6da02997bc608377e1b74eb0ef6217198b5ecfd28ac9dc16d30630f8340a4"
+    },
+    {
+      "path": "dist/assets/marvel/panther.png",
+      "bytes": 453632,
+      "sha256": "e3ac7b665b91b06f374807a41379c5a894f903ea24e6a13bd91df78f228c8472"
+    },
+    {
+      "path": "dist/assets/marvel/ragnarok-atmosphere.svg",
+      "bytes": 1787,
+      "sha256": "ab96d555ab010d3ea20cc9436ce2ed4dd48993723b93f532bea3085868c67266"
+    },
+    {
+      "path": "dist/assets/marvel/scarletwitch-card-optimized.webp",
+      "bytes": 241250,
+      "sha256": "469e5503a39d6d1913ef15bd0dd3231f1a4b780f22b0429d572b44b3918bed9b"
+    },
+    {
+      "path": "dist/assets/marvel/scarletwitch-card.png",
+      "bytes": 759604,
+      "sha256": "a8d9ed61fab86a52f386f35e116671d258d97b86e8a2e3784b7d2daae6298241"
+    },
+    {
+      "path": "dist/assets/marvel/silk-web.svg",
+      "bytes": 68582,
+      "sha256": "b5c013787c4a891181d5412ccc11aa3bd26b5c3941bd68e53ab6ed15378fdebe"
+    },
+    {
+      "path": "dist/assets/marvel/spiderman-cutout-optimized.webp",
+      "bytes": 24802,
+      "sha256": "5239a73d75d4924ab41d575184094695e85161690b7ac8a13895b903dac59c6a"
+    },
+    {
+      "path": "dist/assets/marvel/spiderman-cutout.png",
+      "bytes": 320512,
+      "sha256": "0154b481dbd6ab0709b9062fe7a289029f32d3d31c4943da43d0fc59181fd2fb"
+    },
+    {
+      "path": "dist/assets/marvel/spiderman-scene.jpg",
+      "bytes": 33135,
+      "sha256": "0a0b4e21ea66ee473933863b56f0ea856a74e53562e771030c135cd362df95cf"
+    },
+    {
+      "path": "dist/assets/marvel/spiderman-web-reference.jpg",
+      "bytes": 142545,
+      "sha256": "d695d2cf8aeaf38d76d90b18d53f10c02365ed0efe6407f7b5c476199222c0b5"
+    },
+    {
+      "path": "dist/assets/marvel/storm-clouds.svg",
+      "bytes": 791,
+      "sha256": "8e2af48e5788ac6234a22c46bcd514cbd9603ad6018f5e0af7b1846fef2b32b9"
+    },
+    {
+      "path": "dist/assets/marvel/strange-optimized.webp",
+      "bytes": 56096,
+      "sha256": "e8516d57f1ab97e580c9d676291f4ca038a7f6384ee41d83a7a5a3aacd0b1fba"
+    },
+    {
+      "path": "dist/assets/marvel/strange.png",
+      "bytes": 640000,
+      "sha256": "3fb70c76a2d33b02a7101c9dd858c3f512627a3b5f641f54d8f12b2a53f0006c"
+    },
+    {
+      "path": "dist/assets/marvel/thor-cutout-optimized.webp",
+      "bytes": 101234,
+      "sha256": "8b6b35a34b7326950d4b491116d5e499d70d02238c272317f0f43374d760978a"
+    },
+    {
+      "path": "dist/assets/marvel/thor-cutout.png",
+      "bytes": 1120256,
+      "sha256": "d610853836310f4fd021eaf0f2d1e72c49c660ff514bf6663e8b5711c79bc6db"
+    },
+    {
+      "path": "dist/assets/marvel/thor-palette-reference.jpg",
+      "bytes": 1217638,
+      "sha256": "4b7504056a26991f02eb51e2b3d67be1ab4dd4a4e5d1f44d142b353d357d5b75"
+    },
+    {
+      "path": "dist/assets/marvel/thor-scene.jpg",
+      "bytes": 82518,
+      "sha256": "47f0ddfad407b91c821a21ad991723bac88394e019cf3d0e2405250993bf5b0d"
+    },
+    {
+      "path": "dist/assets/marvel/vibranium-veins.svg",
+      "bytes": 694,
+      "sha256": "b5befafec144d18fbca2f1135024df7b50d3c7552bc955a6e163806968a8f23f"
+    },
+    {
+      "path": "dist/assets/marvel/vibranium.svg",
+      "bytes": 386,
+      "sha256": "e0d54b779d8e7fa290f8ba7b688ad89ee930ad659f8d91eec118a4f412349ec2"
+    },
+    {
+      "path": "dist/assets/marvel/vision-card-optimized.webp",
+      "bytes": 42650,
+      "sha256": "094a402c24f48c8278079d872ca94bdc43705d330fdbbd471a42430e4b47902d"
+    },
+    {
+      "path": "dist/assets/marvel/vision-card.png",
+      "bytes": 774736,
+      "sha256": "23b14def2aa3bb65361052875b75209fd734bfe2447fdc73058dd5706a139378"
+    },
+    {
+      "path": "dist/assets/marvel/web-hammock.svg",
+      "bytes": 97406,
+      "sha256": "0f326394503218ba1d96db8e9eb048917363716b08e64f0106cfdbfd88feee85"
+    },
+    {
+      "path": "dist/assets/marvel/web.svg",
+      "bytes": 3364,
+      "sha256": "c6ba2f0e966aa75ca042982e04348b810ca8c42d044d29b734fd311e32fc76ac"
+    },
+    {
+      "path": "dist/assets/marvel/wolverine-card-optimized.webp",
+      "bytes": 52228,
+      "sha256": "356a8a95d1912f3b177d470fb262c8d92803057aec335e6b25cfd0c8fb57fba1"
+    },
+    {
+      "path": "dist/assets/marvel/wolverine-card.png",
+      "bytes": 329217,
+      "sha256": "c614f0932b8a71f1482854bf3d0b27b12080501063a4d01d4e9facc7afcd9145"
+    },
+    {
+      "path": "dist/assets/mj-favicon.svg",
+      "bytes": 344,
+      "sha256": "eef7ce63a2c11d529ab514694eb5888db01288075c31d80eb29464d5c2db81a0"
+    },
+    {
+      "path": "dist/assets/mj-mark.svg",
+      "bytes": 320,
+      "sha256": "3d8900b63b6157abbcb10e51c0dc5e8a9a53009a16ff7a67af92afcf0bb4543b"
+    },
+    {
+      "path": "dist/assets/mj-social.svg",
+      "bytes": 1028,
+      "sha256": "714e71b01e7b48af14332353cebd6ee8aceda936aa9f609afbdbb7ef4c95a7bf"
+    },
+    {
+      "path": "dist/chapter-environments.js",
+      "bytes": 11979,
+      "sha256": "ca9d0cb3fe3209c66dd1e52cffbe125134d05d03d1d8c5558d66b15a2ecda9a2"
+    },
+    {
+      "path": "dist/character-activity.css",
+      "bytes": 1930,
+      "sha256": "4b2bac57e4038907c23ff5a6c1031ecd5b4d346087bc56835cbba0a5f39c5dae"
+    },
+    {
+      "path": "dist/character-motion.js",
+      "bytes": 2807,
+      "sha256": "dcbae068799f54c65464c1e052e1cab8d72e8d4f7dc246e859ff23ccebf31ba2"
+    },
+    {
+      "path": "dist/contact-refinement.css",
+      "bytes": 5463,
+      "sha256": "2badc4c4d52ccb54b5690c9de69b1752158b5a60f2c280bb0db1d4ffe608818f"
+    },
+    {
+      "path": "dist/content.js",
+      "bytes": 84429,
+      "sha256": "e7849cfcd69df3e250eb793353b8dce4622e72eb96133975c743e0384c3ea5d3"
+    },
+    {
+      "path": "dist/environments.css",
+      "bytes": 3212,
+      "sha256": "e401375744ba710ab7097a1a9a77f910330647ae7f5957deba5a37b46ab6843b"
+    },
+    {
+      "path": "dist/figure-rig.js",
+      "bytes": 9526,
+      "sha256": "7847a6eea65682cb37365f91ed7fdf5317455f6ba61aad3a8df8f6ece40e9c61"
+    },
+    {
+      "path": "dist/frameless.css",
+      "bytes": 3958,
+      "sha256": "ccb1f327e8eada71988f08a46588753395367b760cdfa73ff7515a64a9768971"
+    },
+    {
+      "path": "dist/hero-audio.js",
+      "bytes": 6267,
+      "sha256": "5a7762107120feca693a2d04b8e6e787f4dbc1d651d685e4ac4bcefe033a03df"
+    },
+    {
+      "path": "dist/hero-effects.js",
+      "bytes": 6665,
+      "sha256": "3812f96e4d328efe08151ef9c1ea2a2493047508845afd510326aeed117ac742"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 36588,
+      "sha256": "edf283fdad04ac6c242fbdec2586b87d793d83590250e9b8a89f4bfcafa8e99d"
+    },
+    {
+      "path": "dist/learning-editorial.css",
+      "bytes": 7807,
+      "sha256": "6799bc31efa27801482487f308a3d471824be707827827437f2750bb97cf71d1"
+    },
+    {
+      "path": "dist/learning.js",
+      "bytes": 945,
+      "sha256": "1c223fe312f79373a6a42f7b4dd2ce560b00fb4cde6924515df1926538898f39"
+    },
+    {
+      "path": "dist/marvel.bundle.css",
+      "bytes": 207433,
+      "sha256": "3603bd6d43773906de75dde9cc17889af6b7648149a8330aad5c26ebdfec3863"
+    },
+    {
+      "path": "dist/marvel.css",
+      "bytes": 26272,
+      "sha256": "c7797ba9c47d90ac66b37ff9435ac032eb77850a75540bd098ca540821c68d64"
+    },
+    {
+      "path": "dist/marvel.js",
+      "bytes": 14059,
+      "sha256": "b85a41bcdfd8f333d9ce69170d6e9a0e9d120eebc74d70ffa8de030707399202"
+    },
+    {
+      "path": "dist/mobile-cards.css",
+      "bytes": 4393,
+      "sha256": "70c53e62369060d1c6e971af11e16b2c5ba7362195dac389f1f22c4360286de4"
+    },
+    {
+      "path": "dist/mobile-focus.css",
+      "bytes": 16812,
+      "sha256": "6287d045ec3719104771a93cfd0b7a956b7f4576257bc5ce778b000d127bc98c"
+    },
+    {
+      "path": "dist/mobile-navigation.js",
+      "bytes": 1500,
+      "sha256": "a09c027bc80e74cc7f8535b661e4e6d2561c7d9e2d9610360fe135a31f32cd72"
+    },
+    {
+      "path": "dist/mobile-viewport.js",
+      "bytes": 1502,
+      "sha256": "05d8fa00d74ac224501fdce8999fd2596e61e6e3abf549f6df6c7289d29bdbb9"
+    },
+    {
+      "path": "dist/panda-opening-layout.css",
+      "bytes": 12217,
+      "sha256": "37f7b4471a22c7959c657272820db91940ac470efe87b3eb4b6cf541f4ce4b87"
+    },
+    {
+      "path": "dist/panda.bundle.css",
+      "bytes": 168373,
+      "sha256": "6e080602aa5c5322a60b9bce832c1e43005fa6d8f594e9c75f5d94f1b48eec8b"
+    },
+    {
+      "path": "dist/panda/app.js",
+      "bytes": 23082,
+      "sha256": "d8ae9fed107d320b600ac021ed2ef80135f7bbf873f48ce1bbc64c3f56f09958"
+    },
+    {
+      "path": "dist/panda/chi-effects.css",
+      "bytes": 481,
+      "sha256": "cc190381e3cc37a4260af0910c378ce2d5bdd977e40a55a2f15727cbd43a96bf"
+    },
+    {
+      "path": "dist/panda/chi-effects.js",
+      "bytes": 4208,
+      "sha256": "60199a12200d9d8716a3468810b6500e0185ab640b7644128dbe0915ba46df62"
+    },
+    {
+      "path": "dist/panda/dragon-geometry.js",
+      "bytes": 5772,
+      "sha256": "2382f3fbb0e9446cd61768f08740089c39d4a5a82ed3ad597d42984bd6b9fb7a"
+    },
+    {
+      "path": "dist/panda/dragon.js",
+      "bytes": 10957,
+      "sha256": "e5a755fb59267aecd6f4aa8b21309ed7b04c63944cedbae4b1bba4903c16c27b"
+    },
+    {
+      "path": "dist/panda/index.html",
+      "bytes": 32930,
+      "sha256": "8de68e8f2743f5bc6623016c3c93df1ee02f5fbd90ae268c858d32ce27c9d89f"
+    },
+    {
+      "path": "dist/panda/kungfu.css",
+      "bytes": 20597,
+      "sha256": "a51ee0c0e11c7296401fa9353c39e33bda6346043dbf3d2304aff4c3ee066d9b"
+    },
+    {
+      "path": "dist/panda/kungfu.js",
+      "bytes": 9462,
+      "sha256": "c1cd62e26ce301ceb2e1cba819d4ac335de1082f309fdc51731ea5e452026142"
+    },
+    {
+      "path": "dist/panda/learning.js",
+      "bytes": 945,
+      "sha256": "1c223fe312f79373a6a42f7b4dd2ce560b00fb4cde6924515df1926538898f39"
+    },
+    {
+      "path": "dist/panda/portfolio-upgrade.css",
+      "bytes": 13908,
+      "sha256": "4de05637aa55e5510770229e1fc4c96b4211d40d424ca615b46026047d32f34b"
+    },
+    {
+      "path": "dist/panda/style.css",
+      "bytes": 42289,
+      "sha256": "d0eea07258570c44b8e22bbf17a7c656ea6c4efa22ba045ec6deae3950ac13a2"
+    },
+    {
+      "path": "dist/personal-identity.css",
+      "bytes": 21008,
+      "sha256": "4be5a6394f173c8c6a0b86eede8a8bda9a35ccd995dc5a4577b56c4c2ebacb60"
+    },
+    {
+      "path": "dist/portfolio-depth.css",
+      "bytes": 5152,
+      "sha256": "de120c497f34819a3ca809bd7705cbbfb1cdbc1b6f08a6756542cde23bf096ee"
+    },
+    {
+      "path": "dist/portfolio-finish.css",
+      "bytes": 9550,
+      "sha256": "8b17c01a09d380b0ab1db821992b2bbdb5d5e8dc479f37ec9f7733515c82b1e4"
+    },
+    {
+      "path": "dist/portfolio-ui.js",
+      "bytes": 1316,
+      "sha256": "1db6aa0e3a9c1e2c41d8ff4746b443b4d54246cec0332c880cdbccfa8033165a"
+    },
+    {
+      "path": "dist/powers-refinement.css",
+      "bytes": 3906,
+      "sha256": "a1e7ffdf5f8b5bdec2687f1689eabd69146071c365e8ba5905e46a5eff436904"
+    },
+    {
+      "path": "dist/project-editorial.css",
+      "bytes": 5895,
+      "sha256": "de13aebe4e64c08ae8bd0e17caccca34937b1bd46ca0f66c450d468b54bb64fc"
+    },
+    {
+      "path": "dist/project-evidence.js",
+      "bytes": 11504,
+      "sha256": "917264e76e4bd30e229ceb602fc640d46181b1007a8b6376d5923e6d26054497"
+    },
+    {
+      "path": "dist/project-heroes.css",
+      "bytes": 12130,
+      "sha256": "2710e69f9c9401edad10238987154712a6d9431f1d83651ea43ac4b83c403ffc"
+    },
+    {
+      "path": "dist/project-resources.js",
+      "bytes": 4910,
+      "sha256": "c56dc84120be95f681a8c80ee37853ea7b31199062f53db0b4d5f31f04b37fbb"
+    },
+    {
+      "path": "dist/project-stories.js",
+      "bytes": 11121,
+      "sha256": "9670da184c929f4425bdeb6297562dd158c7dc6d33f12099747919f4fceb8436"
+    },
+    {
+      "path": "dist/refinements.css",
+      "bytes": 8972,
+      "sha256": "0804b8a04012a1dc75407830468846be5666d042462c787fb92262ca483413c7"
+    },
+    {
+      "path": "dist/selected-systems.css",
+      "bytes": 9276,
+      "sha256": "92dae007e1a7004324c2e312cfbff4d9f84191967e0fede5792c714843787fd7"
+    },
+    {
+      "path": "dist/studio.css",
+      "bytes": 6320,
+      "sha256": "4215e484bfda679a67b3acbcdfea7d2e4d11fc685d2863697bb66d1b6a99fb28"
+    },
+    {
+      "path": "dist/style.css",
+      "bytes": 29553,
+      "sha256": "65e577c2db891f59da3c4a6794746cb0fa2e36b25d37edf4d0ce573a64a81e00"
+    },
+    {
+      "path": "dist/styles-manifest.json",
+      "bytes": 1065,
+      "sha256": "952214d09de9287c0faebfbdee3aa7e8d3924199ca7570af6d77c5f9ae6ae252"
+    },
+    {
+      "path": "dist/theme-switch.css",
+      "bytes": 1790,
+      "sha256": "84fcc701b80054fbd2fd06ffd35a9490d32473855e28ada2aa52c41bd563653d"
+    },
+    {
+      "path": "dist/theme-switch.js",
+      "bytes": 7398,
+      "sha256": "bfe08d14efe44e21922d3f96245370ff22f1dfbb565377027fbec4816c766b55"
+    },
+    {
+      "path": "dist/thor-palette.css",
+      "bytes": 5192,
+      "sha256": "0f241aa3e850ef46d7b14a3d18bab9ad72af5fbdadf00465b68db4dc64601555"
+    },
+    {
+      "path": "dist/web-transitions.css",
+      "bytes": 3161,
+      "sha256": "010f83eb2e01d2365fc7d00bd61d7a5ea9ec2bc509ab51249464d259741b4e96"
+    },
+    {
+      "path": "reports/additional-component-checks.json",
+      "bytes": 834,
+      "sha256": "57bc4892c14d6d9a46d937b7dcb7d9cf4231d8a3412940b3c2dbcb3c6cac775c"
+    },
+    {
+      "path": "reports/after.json",
+      "bytes": 389,
+      "sha256": "35e49c06abeac59c45890ab0d1bc997a6c1b6258b7dd34e016404eb401185d55"
+    },
+    {
+      "path": "reports/before.json",
+      "bytes": 393,
+      "sha256": "091f632d31aec047c34693fc6a21ad52fe258b549db206ba2ab2d99fa799871b"
+    },
+    {
+      "path": "reports/browser-tests.json",
+      "bytes": 1008,
+      "sha256": "c6d8c0c3deae49ffba2fe3ec2dbf61739d93c622c9a88a12768c12a5fa64c003"
+    },
+    {
+      "path": "reports/evidence-update.json",
+      "bytes": 389,
+      "sha256": "c453e19aaafed2aad261c8b6f1abe03cebd5fda88c3cae24df8dd74bc7efbf62"
+    },
+    {
+      "path": "reports/image-savings.json",
+      "bytes": 3145,
+      "sha256": "7f006bbc2317e05e984554aa5514a69d003a31a413d2ed595fecacff69d8cb4c"
+    },
+    {
+      "path": "reports/local-pdf-inventory.json",
+      "bytes": 1906,
+      "sha256": "5d6824a1c60679a797e957e1d4040b9e1174f853ebd7fee118a3f1352695ecc2"
+    },
+    {
+      "path": "reports/local-work-inventory.json",
+      "bytes": 1899,
+      "sha256": "8f79a459625121ebdb24540c2f435487866bf090a782c1165669ac7584440275"
+    },
+    {
+      "path": "reports/public-demo-checks.json",
+      "bytes": 1530,
+      "sha256": "31f3ded6320bc6802572a24f179c38cb56688450ef8409cf7a942037a2c27ca4"
+    },
+    {
+      "path": "reports/public-repositories.json",
+      "bytes": 1093,
+      "sha256": "520fc6d200a8273b702e3f1d2aad29e770a7bb47c306c5527baf8f58e04c7f7c"
+    },
+    {
+      "path": "reports/tes-contributions.json",
+      "bytes": 982,
+      "sha256": "2a0277790ace4b0c5734b7be841d660c58426d70bde128dfd8c37d61ebf57a4f"
+    },
+    {
+      "path": "reports/unit-tests.json",
+      "bytes": 6796,
+      "sha256": "f0f8de5044c1620df9d38e312570bc46d806a9a0b698160ae1d0dbcca878b300"
+    },
+    {
+      "path": "scripts/build_styles.py",
+      "bytes": 1192,
+      "sha256": "38bdd38ad04908fdb83634d4e5754364003ab0fb50935ed08ae450d324084c76"
+    },
+    {
+      "path": "scripts/check-additional-components.py",
+      "bytes": 2517,
+      "sha256": "083c8165d2f14cc2885cce7088e9de0c34ceecf9d7205d9a6cd06391544fd545"
+    },
+    {
+      "path": "scripts/check-arcade.cjs",
+      "bytes": 13144,
+      "sha256": "eaf04cf97eb9584600961ae8375cb1fafcb4eed3504dde0482d73c8eb8415d8f"
+    },
+    {
+      "path": "scripts/check-audio.cjs",
+      "bytes": 6599,
+      "sha256": "cd889e8acf937ad0cb6bca77d15d10e98825dd011eb2e7752abd1c17b8185d81"
+    },
+    {
+      "path": "scripts/check-browser.cjs",
+      "bytes": 6307,
+      "sha256": "ad05a843eda977209f66ddfb0bd21b36d9f7209083e7169ea22af958f5448535"
+    },
+    {
+      "path": "scripts/check-character-motion.cjs",
+      "bytes": 1984,
+      "sha256": "dc3a3451d7c4cbfc745d9dada028c86198e305e48f37945a645905c8548bd193"
+    },
+    {
+      "path": "scripts/check-figure-rig.cjs",
+      "bytes": 5275,
+      "sha256": "1f06dd81d3eb2c43cccb7639b136e907b807fb2e6a3ab45fb8864428d6c2f5a4"
+    },
+    {
+      "path": "scripts/check-interactions.cjs",
+      "bytes": 26316,
+      "sha256": "62d479ec17483786ab287c5d373af3d1d6668e2b419f37d136f238686097c86c"
+    },
+    {
+      "path": "scripts/check-mobile-navigation.cjs",
+      "bytes": 3348,
+      "sha256": "082a0da8f966cc01c7f695677bdbd5746f7fccebe3ff526947b958cf94f2d4bb"
+    },
+    {
+      "path": "scripts/check-mobile-viewport.cjs",
+      "bytes": 3132,
+      "sha256": "9a843ef413ff658c58ea2a643fe1ab8013a926259f49ff80d61e064952830068"
+    },
+    {
+      "path": "scripts/check-panda-chi.cjs",
+      "bytes": 2699,
+      "sha256": "c98f40045e93800d8cb7796c8c9009249ef12b56f34652fa7b4df84c851f70b1"
+    },
+    {
+      "path": "scripts/check-panda-interactions.cjs",
+      "bytes": 27341,
+      "sha256": "3572e01e4967fc7ce50e5a5a14e7c6efc642c18369c9b38fd084364201c0895e"
+    },
+    {
+      "path": "scripts/check-portfolio-finish.cjs",
+      "bytes": 3757,
+      "sha256": "d5db3ab68ec13c7d6cf1b89bf91d77fd29baf236c0c26c8ee21a6110c7ff2bbd"
+    },
+    {
+      "path": "scripts/check-project-evidence.cjs",
+      "bytes": 1644,
+      "sha256": "a5c31e648dcd566cc1f2e4f4f4c50cd9fc06a82e7cc01fa3aa4e5dd66be13d07"
+    },
+    {
+      "path": "scripts/check-resources.cjs",
+      "bytes": 2464,
+      "sha256": "4ad0dc78c5aa9c7a673e0e5171b57f39c55d33f41406851fb335239d21dac65c"
+    },
+    {
+      "path": "scripts/check-reviewed-projects.py",
+      "bytes": 2348,
+      "sha256": "62974c6197fb23126bf984754de97cf324d7118c261c7154aeff2449e7c5cf0a"
+    },
+    {
+      "path": "scripts/check-theme-switch.cjs",
+      "bytes": 11664,
+      "sha256": "fc7f182281ce123723dbfc80b3b35ca9d9ef5c25726825c286ec865d46159457"
+    },
+    {
+      "path": "scripts/collect_local_evidence.py",
+      "bytes": 6306,
+      "sha256": "5dba163d1c2d6995144d3ffc59d0da750289802f94e5eb354074fb340216a22e"
+    },
+    {
+      "path": "scripts/measure.cjs",
+      "bytes": 1769,
+      "sha256": "9b2108af0a3a3080b0118142086ccc4326ba1490a2a726d43e50bd98201d732f"
+    },
+    {
+      "path": "scripts/optimize_images.py",
+      "bytes": 1636,
+      "sha256": "fd5feb264016e6a48d52bc3e86f3a885cd4cb30f7759c07886ece55b26a6b315"
+    },
+    {
+      "path": "scripts/validate.py",
+      "bytes": 2246,
+      "sha256": "029e9cc4f9b8277fb3bc116f53aaa9f8d61f79689ce2a7425ea6e29f083b6dd5"
+    },
+    {
+      "path": "vercel.json",
+      "bytes": 185,
+      "sha256": "daedfacbfac892524885cd4bf9543e510a8c7676cade2939310db0d6e256ebee"
+    }
+  ]
+}

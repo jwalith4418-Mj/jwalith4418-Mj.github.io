@@ -1,0 +1,44 @@
+/* Transparent figures share their chapter's environment: no poster panel. */
+.cutout-art .hero-figure{inset:0 0 34px;background:none;border:0;border-radius:0;box-shadow:none;overflow:visible}
+.cutout-art .hero-figure::before{content:none}
+.cutout-art .hero-figure img{width:100%;height:100%;max-width:100%;object-fit:contain;object-position:center;border-radius:0;filter:drop-shadow(0 18px 25px #0008);transform-origin:50% 80%}
+.cutout-art .power-ring{border:0;background:radial-gradient(ellipse,color-mix(in srgb,var(--power) 9%,transparent),transparent 67%);box-shadow:none}
+.cutout-art .power-ring::after{content:none}
+.cutout-art .power-trails{display:none}
+.cutout-art .hero-power-label{bottom:4px;right:0;background:#09101dcc;border-color:color-mix(in srgb,var(--power) 30%,transparent)}
+.hero-art.art-ironman{height:620px}
+.art-ironman .hero-figure img{filter:drop-shadow(0 22px 28px #0009) drop-shadow(0 0 15px #7ce3ff18)}
+.work-section .section-intro{min-height:470px;grid-template-columns:1.05fr 1fr;gap:4vw}
+.work-section .section-intro>.art-spiderman{height:420px;max-width:580px}
+.art-spiderman .hero-figure img{filter:drop-shadow(0 20px 22px #0009)}
+.art-spiderman .power-ring{inset:0;background:radial-gradient(ellipse,#af263312,transparent 67%)}
+.exposure-section.content-section{background:radial-gradient(ellipse at 82% 8%,#34557560,transparent 35%),radial-gradient(ellipse at 45% 34%,#142b4350,transparent 55%),linear-gradient(155deg,#0c111b,#101b2c 48%,#080d17)!important}
+.exposure-section .section-intro{min-height:540px;gap:4vw}
+.exposure-section .section-intro>.art-thor{height:535px;max-width:460px}
+.environment-thor{background:radial-gradient(ellipse at 90% 0,#6d97be20,transparent 45%),radial-gradient(ellipse at 15% 45%,#05080ec9,transparent 55%)}
+.environment-thor::before,.environment-thor::after{content:'';position:absolute;inset:0;pointer-events:none}
+.environment-thor::before{background:url('/assets/marvel/storm-clouds.svg') center top/1800px 900px repeat-y;opacity:.7}
+.environment-thor::after{background:linear-gradient(90deg,#080d1844,transparent 55%),linear-gradient(180deg,transparent 40%,#080d1733)}
+.art-thor .hero-figure img{filter:drop-shadow(0 15px 28px #000a) drop-shadow(0 0 13px #9fe9ff15)}
+.exposure-section .section-top{border-color:#829bb42e}
+.contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:5vw;align-items:center}
+.contact-layout>.art-captain{width:100%;height:560px;min-height:0;max-width:400px;aspect-ratio:auto;justify-self:center}
+.contact-layout>.contact-content{width:100%;max-width:800px;text-align:left;margin:0}
+.contact-actions{justify-content:flex-start}
+.contact-content h2{font-size:clamp(44px,5.5vw,80px)}
+.contact-email{font-size:clamp(23px,2.5vw,37px)}
+.reading-mode .cutout-art .hero-figure img,.reduced-motion .cutout-art .hero-figure img{transform:none!important}
+.reading-mode .environment-thor::before,.reduced-motion .environment-thor::before{opacity:.35}
+@media(max-width:1100px){.hero-art.art-ironman{height:550px}.work-section .section-intro>.art-spiderman{height:350px}.exposure-section .section-intro>.art-thor{height:480px}.contact-layout>.art-captain{height:480px}.contact-layout{gap:30px}}
+@media(max-width:760px){
+ .hero-art.art-ironman{height:430px;margin-top:28px}
+ .work-section .section-intro,.exposure-section .section-intro{min-height:0;gap:24px}
+ .work-section .section-intro>.art-spiderman{height:clamp(260px,75vw,350px);max-width:440px;margin:0 auto}
+ .exposure-section .section-intro>.art-thor{height:450px;max-width:360px;margin:0 auto}
+ .contact-layout{display:flex;flex-direction:column;gap:35px}
+ .contact-layout>.art-captain{height:450px;max-width:340px;aspect-ratio:auto;order:1}
+ .contact-layout>.contact-content{order:0;text-align:left}
+ .cutout-art .hero-power-label{font-size:8px;padding:10px;right:0;bottom:3px}
+ .art-captain .hero-identity>span{font-size:13px}
+ .environment-thor::before{background-size:1000px 800px;opacity:.55}
+}

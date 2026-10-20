@@ -1,0 +1,178 @@
+Reviewed source: hackathon/IITM/aletheia/aletheia/aletheia/pipeline.py
+Original file SHA-256: 387ba711df1d7a8bc287d8fcdf050a64106df3818914ea41b3989a04c51aa689
+Checked: 2026-10-20
+Scope: Source inspection, not full application validation.
+
+---
+"""The trust spine.
+
+    route -> (compute? tool) -> retrieve -> rerank -> GROUNDEDNESS GATE
+          -> generate -> VERIFY -> selective-answer decision
+
+Two independent places can abstain BEFORE any claim is emitted (out-of-scope
+router, groundedness gate) and one AFTER (verifier drops unsupported sentences,
+which can empty the answer). The `answer_threshold` is the single knob the
+evaluation sweeps to trace the risk-coverage curve — there is no magic constant.
+"""
+from __future__ import annotations
+
+import logging
+from dataclasses import dataclass
+
+from .generate import ExtractiveGenerator
+from .interfaces import Generator, Reranker, Verifier
+from .rerank import LexicalReranker, rerank
+from .retrieval.hybrid import HybridRetriever
+from .router import route
+from .text import content_tokens, coverage
+from .tools.calculus import integrate_expr
+from .types import Answer, Intent, RetrievedSpan, Sentence
+from .verify import LexicalVerifier, verify_answer
+
+log = logging.getLogger(__name__)
+
+
+@dataclass
+class PipelineConfig:
+    k: int = 8
+    top_n: int = 4
+    use_dense: bool = True
+    use_sparse: bool = True
+    use_rerank: bool = True
+    use_source_prior: bool = True
+    use_verifier: bool = True
+    min_support: float = 0.5
+    gate_min_coverage: float = 0.30   # groundedness gate: min query-term coverage
+    answer_threshold: float = 0.0     # selective-answering knob (swept in eval)
+
+
+def _evidence_confidence(query: str, spans: list[RetrievedSpan]) -> float:
+    """Confidence signal = evidence quality, not model certainty.
+    Blends best-rerank/score with query-term coverage across the top spans."""
+    if not spans:
+        return 0.0
+    top = spans[: min(3, len(spans))]
+    q = content_tokens(query)
+    cov = max(coverage(q, content_tokens(sp.chunk.text)) for sp in top)
+    best = max((sp.rerank if sp.rerank is not None else sp.score) for sp in top)
+    return 0.5 * cov + 0.5 * min(best, 1.0)
+
+
+class Pipeline:
+    def __init__(
+        self,
+        retriever: HybridRetriever,
+        generator: Generator | None = None,
+        reranker: Reranker | None = None,
+        verifier: Verifier | None = None,
+        config: PipelineConfig | None = None,
+        calibrator=None,
+    ):
+        self.retriever = retriever
+        self.generator = generator or ExtractiveGenerator()
+        self.reranker = reranker or LexicalReranker()
+        self.verifier = verifier or LexicalVerifier()
+        self.cfg = config or PipelineConfig()
+        # Optional isotonic/Platt calibrator (see eval/calibration.py). When set,
+        # it maps the raw evidence-confidence to a calibrated probability before
+        # the selective-answering decision, so `answer_threshold` is a true risk.
+        self.calibrator = calibrator
+
+    def _abstain(self, q, subject, intent, reason) -> Answer:
+        log.info("abstain subject=%s intent=%s reason=%s",
+                 subject, getattr(intent, "value", intent), reason)
+        return Answer(question=q, subject=subject, intent=intent,
+                      answered=False, abstain_reason=reason)
+
+    def answer(self, query: str) -> Answer:
+        cfg = self.cfg
+        subject, intent = route(query)
+
+        # Gate 0: out-of-scope router abstains before touching the index.
+        if intent == Intent.OUT_OF_SCOPE:
+            return self._abstain(query, subject, intent,
+                                 "No matching subject in the uploaded course materials.")
+
+        # Computational path: verified tool + (grounding retrieval attached).
+        if intent == Intent.COMPUTATIONAL and subject == "calculus":
+            comp = self._computational(query, subject, intent)
+            if comp is not None:
+                return comp
+            # fall through to retrieval if we couldn't extract an expression
+
+        spans = self.retriever.retrieve(
+            query, subject=subject, k=cfg.k,
+            use_dense=cfg.use_dense, use_sparse=cfg.use_sparse,
+            use_source_prior=cfg.use_source_prior,
+        )
+        if cfg.use_rerank and spans:
+            spans = rerank(self.reranker, query, spans)
+        spans = spans[: cfg.top_n]
+
+        # Gate 1: groundedness. Weak evidence -> abstain before generating.
+        q = content_tokens(query)
+        best_cov = max((coverage(q, content_tokens(sp.chunk.text)) for sp in spans), default=0.0)
+        if best_cov < cfg.gate_min_coverage:
+            return self._abstain(query, subject, intent,
+                                 "Insufficient supporting evidence in the course materials.")
+
+        ans = self.generator.generate(query, spans)
+        ans.subject, ans.intent = subject, intent
+
+        # Gate 2: verify each sentence against its citation; drop unsupported.
+        if cfg.use_verifier:
+            ans = verify_answer(self.verifier, ans, min_support=cfg.min_support)
+        else:
+            for s in ans.sentences:
+                s.support = 1.0
+            ans.faithfulness = 1.0
+
+        if not ans.answered:
+            return self._abstain(query, subject, intent,
+                                 "No sentence could be grounded in a citation.")
+
+        ans.confidence = _evidence_confidence(query, spans)
+        if self.calibrator is not None:
+            ans.confidence = float(self.calibrator.transform([ans.confidence])[0])
+
+        # Selective-answering decision: below the risk threshold -> abstain.
+        if ans.confidence < cfg.answer_threshold:
+            return self._abstain(query, subject, intent,
+                                 "Confidence below the configured trust threshold.")
+        log.info("answered subject=%s intent=%s confidence=%.3f faithfulness=%.3f",
+                 subject, intent.value, ans.confidence, ans.faithfulness)
+        return ans
+
+    def _computational(self, query, subject, intent) -> Answer | None:
+        expr = _extract_integrand(query)
+        if expr is None:
+            return None
+        res = integrate_expr(expr)
+        if not res.ok or not res.verified:
+            return self._abstain(query, subject, intent,
+                                 f"Could not produce a verified result ({res.detail}).")
+        # attach the method taught in notes as grounding
+        spans = self.retriever.retrieve("integration by parts method", subject="calculus", k=3)
+        cite = spans[0].chunk.id if spans else "calculus:notes"
+        sent = Sentence(text=f"∫({expr}) dx = {res.value} + C  [{res.detail}]",
+                        cited_span_id=cite, support=1.0, kept=True)
+        a = Answer(question=query, subject=subject, intent=intent, answered=True,
+                   sentences=[sent], spans=spans, confidence=1.0, faithfulness=1.0,
+                   tool_result=res.value)
+        return a
+
+
+def _extract_integrand(query: str) -> str | None:
+    """Pull the expression after 'integrate'/'integral of'/'∫'.
+
+    Only light notation normalisation happens here (``^`` -> ``**``, ``·`` -> ``*``);
+    implicit multiplication (``2x``, ``x sin(x)``) is handled by the calculus
+    tool's parser, so this stays a small, robust extractor rather than a second
+    ad-hoc math parser.
+    """
+    import re
+    m = re.search(r"(?:integrate|integral of|∫)\s+(.+?)(?:\s+d?x)?[\?\.]?$", query, re.I)
+    if not m:
+        return None
+    expr = m.group(1).strip().replace("^", "**").replace("·", "*")
+    return expr or None

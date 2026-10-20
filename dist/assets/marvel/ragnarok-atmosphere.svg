@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+ <defs>
+  <radialGradient id="emerald"><stop stop-color="#54d565" stop-opacity=".68"/><stop offset=".5" stop-color="#168b43" stop-opacity=".42"/><stop offset="1" stop-color="#0c2414" stop-opacity="0"/></radialGradient>
+  <radialGradient id="sun"><stop stop-color="#fff4a2" stop-opacity=".76"/><stop offset=".25" stop-color="#eccc36" stop-opacity=".44"/><stop offset="1" stop-color="#d9a325" stop-opacity="0"/></radialGradient>
+  <radialGradient id="ember"><stop stop-color="#ba5525" stop-opacity=".32"/><stop offset="1" stop-color="#672318" stop-opacity="0"/></radialGradient>
+  <linearGradient id="bridge" x1="500" y1="950" x2="1550" y2="150" gradientUnits="userSpaceOnUse"><stop stop-color="#7bc257" stop-opacity="0"/><stop offset=".55" stop-color="#b8d641" stop-opacity=".24"/><stop offset=".83" stop-color="#ffe978" stop-opacity=".6"/><stop offset="1" stop-color="#fff2ae" stop-opacity="0"/></linearGradient>
+ </defs>
+ <ellipse cx="1140" cy="150" rx="820" ry="520" fill="url(#emerald)"/>
+ <ellipse cx="1370" cy="530" rx="600" ry="400" fill="url(#sun)"/>
+ <ellipse cx="1120" cy="830" rx="700" ry="280" fill="url(#ember)"/>
+ <g stroke="url(#bridge)">
+  <path d="M440 880Q1090 920 1630 155" stroke-width="22"/>
+  <path d="M380 910Q1050 1010 1650 240" stroke-width="5"/>
+  <path d="M600 940Q1230 915 1700 320" stroke-width="13"/>
+  <path d="M520 965Q1180 1030 1690 410" stroke-width="2"/>
+ </g>
+ <g fill="#f5e7a4" opacity=".24"><circle cx="1220" cy="250" r="1.8"/><circle cx="1090" cy="390" r="1"/><circle cx="1450" cy="130" r="2"/><circle cx="1190" cy="680" r="1.5"/><circle cx="1500" cy="460" r="1.5"/><circle cx="760" cy="570" r="1"/><circle cx="1330" cy="600" r="2"/></g>
+</svg>

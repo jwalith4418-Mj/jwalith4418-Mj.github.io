@@ -1,0 +1,17 @@
+NEXUS — reviewed source excerpt
+Source: Nexus/nexus-decision-twin-v18/nexus-rin/backend/forward_ledger/ledger.py
+Lines 198–209
+SHA-256 of full supplied source: 9f7d2303b5ac6e324788870ac6fb35787914ddf06716182cb6d5532edfba0eef
+
+    def verify(self) -> bool:
+        """Recompute the whole chain. Any edit to any sealed core breaks here."""
+        prev = GENESIS
+        for i, e in enumerate(self._entries):
+            if e.seq != i:
+                raise TamperError(f"seq gap at {i}")
+            if e.prev_hash != prev:
+                raise TamperError(f"broken link at seq {e.seq}")
+            if e.compute_hash() != e.hash:
+                raise TamperError(f"hash mismatch at seq {e.seq} — entry was altered after sealing")
+            prev = e.hash
+        return True

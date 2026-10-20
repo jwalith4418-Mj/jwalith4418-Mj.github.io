@@ -1,0 +1,16 @@
+const assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs'),path=require('node:path');
+const code=fs.readFileSync(path.join(__dirname,'../dist/mobile-navigation.js'),'utf8');
+function fixture(){
+ const events={},frames=new Map();let serial=0,reads=0;
+ const links=['work','writing','about','contact'].map(id=>({dataset:{phoneSection:id},attrs:{},setAttribute(k,v){this.attrs[k]=v;},removeAttribute(k){delete this.attrs[k];}}));
+ const nav={querySelectorAll:()=>links,addEventListener(k,f){events['nav-'+k]=f;}},panel={open:true};
+ const targets=['selected-work','work','writing','about','global-exposure','contact'].map((id,i)=>({id,top:800+i*1000,getBoundingClientRect(){reads++;return{top:this.top};}}));
+ const doc={hidden:false,querySelector:()=>nav,getElementById:id=>id==='experience-panel'?panel:targets.find(s=>s.id===id),addEventListener(k,f){events[k]=f;}};
+ const env={document:doc,innerWidth:390,innerHeight:844,requestAnimationFrame(f){const id=++serial;frames.set(id,f);return id;},cancelAnimationFrame(id){frames.delete(id);},window:{addEventListener(k,f){events[k]=f;}}};vm.runInNewContext(code,env);
+ return{env,events,frames,links,panel,targets,get reads(){return reads;},flush(){const list=[...frames.values()];frames.clear();list.forEach(f=>f());},active(){return links.filter(l=>l.attrs['aria-current']).map(l=>l.dataset.phoneSection);}};
+}
+const x=fixture();assert.deepEqual(x.active(),['work']);x.targets[2].top=100;for(let i=0;i<20;i++)x.events.scroll();assert.equal(x.frames.size,1,'One queued update per scroll burst');x.flush();assert.deepEqual(x.active(),['writing']);assert.equal(x.frames.size,0,'No animation loop');x.targets[3].top=50;x.targets[4].top=200;x.events.scroll();x.flush();assert.deepEqual(x.active(),['about']);x.targets[5].top=200;x.events.scroll();x.flush();assert.deepEqual(x.active(),['contact']);
+x.events['nav-click']({target:{closest:()=>x.links[0]}});assert(!x.panel.open);x.events.scroll();assert.equal(x.frames.size,1);x.env.document.hidden=true;x.events.visibilitychange();assert.equal(x.frames.size,0);x.events.scroll();assert.equal(x.frames.size,0);x.env.document.hidden=false;x.events.visibilitychange();x.flush();
+x.env.innerWidth=1440;x.events.resize();const reads=x.reads;x.events.scroll();assert.equal(x.frames.size,0);assert.equal(x.reads,reads,'Desktop has no mobile geometry reads');x.env.innerWidth=844;x.env.innerHeight=390;x.targets[5].top=50;x.events.resize();assert.equal(x.frames.size,1,'Short phone landscape works');x.flush();assert.deepEqual(x.active(),['contact']);
+for(const file of ['index.html','panda/index.html']){const html=fs.readFileSync(path.join(__dirname,'../dist',file),'utf8');assert.equal((html.match(/data-phone-section=/g)||[]).length,4);assert(html.includes('aria-label="Phone navigation"'));assert(JSON.parse(fs.readFileSync(path.join(__dirname,'../dist/styles-manifest.json'),'utf8'))[file.startsWith('panda')?'panda':'marvel'].includes('mobile-focus.css'));assert(html.includes('.bundle.css'));assert(html.includes('/mobile-navigation.js'));}
+console.log('PASS: phone shortcut state, source/gallery mapping, learning/about mapping, portrait/landscape, desktop idle behavior, one bounded queued update, hidden-tab cancellation, disclosure dismissal and both documents. Native touch/layout remains unverified.');

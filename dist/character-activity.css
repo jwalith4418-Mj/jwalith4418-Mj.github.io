@@ -1,0 +1,16 @@
+/* Card artwork responds on hover/focus; chapter movement is owned by its runtime. */
+.hero-figure img,.hero-effects{backface-visibility:hidden}
+.hero-figure:focus-visible .hero-power-label,.hero-figure:hover .hero-power-label{border-color:var(--power);color:#fff}
+.project-card:is(:hover,:focus-within) .project-character img{animation:card-ready 2.8s ease-in-out infinite;animation-name:var(--character-idle,card-ready)}
+[data-card-hero="ironman"],[data-card-hero="strange"],[data-card-hero="scarletwitch"],[data-card-hero="vision"]{--character-idle:card-hover}
+[data-card-hero="spiderman"],[data-card-hero="loki"]{--character-idle:card-sway}
+[data-card-hero="antman"]{--character-idle:card-shrink}
+[data-card-hero="hulk"],[data-card-hero="panther"],[data-card-hero="wolverine"]{--character-idle:card-brace}
+@keyframes card-ready{0%,100%{transform:translate(0,-4px) rotate(-.5deg)}50%{transform:translate(4px,-6px) rotate(.8deg)}}
+@keyframes card-hover{0%,100%{transform:translateY(-7px)}50%{transform:translateY(-19px)}}
+@keyframes card-sway{0%,100%{transform:translate(-7px,-7px) rotate(-3deg)}50%{transform:translate(7px,-4px) rotate(3deg)}}
+@keyframes card-shrink{0%,100%{transform:translateY(-5px) scale(1)}50%{transform:translateY(-5px) scale(.85)}}
+@keyframes card-brace{0%,100%{transform:translateY(-2px) scale(1)}50%{transform:translateY(-1px) scale(1.025)}}
+.motion-paused .project-character img,.modal-open .project-character img,.activity-hidden .project-character img,.motion-paused .library-guide.breathing img,.modal-open .library-guide.breathing img,.activity-hidden .library-guide.breathing img{animation-play-state:paused!important}
+.reading-mode .project-character img,.reduced-motion .project-character img,.reading-mode .library-guide img,.reduced-motion .library-guide img{animation:none!important}
+@media(prefers-reduced-motion:reduce){.project-character img,.library-guide img{animation:none!important}}

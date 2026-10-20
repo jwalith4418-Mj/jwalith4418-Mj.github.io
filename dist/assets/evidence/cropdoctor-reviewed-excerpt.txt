@@ -1,0 +1,24 @@
+CROPDOCTOR — reviewed source excerpt
+Source: AI CROP DOCTOR/aicropfinal/intelligence/physics.py
+Lines 82–100
+SHA-256 of full supplied source: ceedc217fb82a98da33c538a7dade973d69e8472aa8ead2da69e79ce2cbd217d
+
+def water_balance_step(moisture_pct: float, crop: str, stage: str, soil: str,
+                       et0: float, rain_mm: float, irrigation_mm: float,
+                       irrigation_effective_mm: float = 0.0) -> float:
+    """
+    One-day root-zone water balance. Returns new moisture (% of field capacity).
+      TAW = AWC × root_depth; depletion driven by ETc; recharge by effective
+      (infiltrated) rain + irrigation; capped at field capacity (100%).
+
+    irrigation_mm            : gross applied water (infiltration eff applied here)
+    irrigation_effective_mm  : water already net of losses (e.g. from
+                               deficit_to_litres, which grosses up by 1/eff) —
+                               added directly, preventing double-discounting.
+    """
+    taw_mm = AWC_MM_PER_M.get(soil, 170.0) * ROOT_DEPTH_M.get(stage, 0.5)
+    eff = INFILTRATION_EFF.get(soil, 0.80)
+    stored_mm = moisture_pct / 100.0 * taw_mm
+    stored_mm += (eff * (rain_mm + irrigation_mm) + irrigation_effective_mm
+                  - etc(crop, stage, et0))
+    return max(0.0, min(100.0, stored_mm / taw_mm * 100.0))

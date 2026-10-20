@@ -1,0 +1,22 @@
+[
+  {
+    "source": "Blackbox_Complete/PROJECT_OVERVIEW.md",
+    "published": "blackbox-overview.md",
+    "sha256": "adcead3df6bc5ee564d5182c43fbddee081702d7f027fb9412ac423811e9ba88"
+  },
+  {
+    "source": "Blackbox_Complete/research_release/TECHNICAL_REPORT.md",
+    "published": "blackbox-technical-report.md",
+    "sha256": "cace3517cc79413b37a1d8a48b12467b5e1bdc72688787313a7b03ccf3d141a9"
+  },
+  {
+    "source": "Blackbox_Complete/frontend/lib/engine.mjs",
+    "published": "blackbox-engine.mjs",
+    "sha256": "c531369738c5fa0ded52a000cf9844d04e1f483ee2c32d4fc0d6b93792318279"
+  },
+  {
+    "source": "Blackbox_Complete/frontend/THIRD_PARTY_NOTICES.md",
+    "published": "blackbox-third-party-notices.md",
+    "sha256": "eec9194d3a85447dafebbe6e8ad4f9ff88478e424b18311a05860096766e3e10"
+  }
+]

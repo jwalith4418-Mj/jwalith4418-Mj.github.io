@@ -1,0 +1,37 @@
+/* The effects occupy the entire chapter, below its readable content. */
+[data-chapter]{isolation:isolate;position:relative}
+.chapter-environment{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.chapter-environment canvas{position:absolute;left:0;top:0;width:100%;height:100svh;pointer-events:none}
+[data-chapter]>:not(.chapter-environment){position:relative;z-index:2}
+.environment-spiderman{background:radial-gradient(ellipse at 80% 10%,#8a182127,transparent 65%)}
+.environment-spiderman::before{content:'';position:absolute;inset:0;background:url('/assets/marvel/web.svg') center top/1600px 1000px repeat-y;opacity:.29}
+.environment-spiderman::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#160c1520,transparent 38%,#160c1508)}
+.work-section .section-intro h2{text-shadow:0 3px 22px #140c17}
+.work-section .section-intro>div:first-child>p{color:#cfbfc7}
+.work-section .section-top{border-color:#ddd0e64a}
+.work-section .work-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:15px}
+.work-section .filters{margin-right:auto}
+.web-pulse{border:1px solid #e0b5cb55;border-radius:5px;padding:10px 13px;color:#f1d8e6;font-size:11px;background:#290f1c88}
+.web-pulse:hover{border-color:#f7d4e6;background:#522638}
+.web-pulse:disabled{opacity:.4}
+.work-section .card-shade::after{content:'';position:absolute;inset:0;background:url('/assets/marvel/web.svg') 70% 30%/960px auto;opacity:.19;pointer-events:none}
+.work-section .project-card:hover,.work-section .project-card:focus-within{border-color:#ebd8ef;box-shadow:0 0 0 1px #e1bedc25,0 20px 45px #6a2c4550}
+.work-section .index-card:focus-visible{outline-color:#ecd5e5}
+.environment-ironman{background:radial-gradient(circle at 22% 46%,#7fd8ff0a,transparent 45%)}
+.environment-ironman::before{content:'';position:absolute;inset:0;background:linear-gradient(#8fdcff07 1px,transparent 1px),linear-gradient(90deg,#8fdcff07 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(90deg,#000,transparent 70%)}
+.environment-strange{background:radial-gradient(ellipse at 70% 30%,#cd741d18,transparent 65%)}
+.environment-panther{background:url('/assets/marvel/vibranium.svg') center top/140px 120px;opacity:.58}
+.environment-thor{background:radial-gradient(ellipse at 8% 20%,#7fb7c91c,transparent 45%),radial-gradient(ellipse at 80% 70%,#b7edff0c,transparent 50%)}
+.environment-captain{background:radial-gradient(ellipse at 65% 55%,#967cdd14,transparent 60%)}
+.reading-mode .chapter-environment canvas,.reduced-motion .chapter-environment canvas{display:none}
+.reading-mode .environment-spiderman::before,.reduced-motion .environment-spiderman::before{opacity:.11}
+.reading-mode .environment-panther,.reduced-motion .environment-panther{opacity:.18}
+@media(max-width:760px){
+ .environment-spiderman::before{background-size:900px 700px;opacity:.23}
+ .work-section .work-toolbar{gap:10px}
+ .work-section .filters{width:100%;margin-bottom:2px}
+ .web-pulse{font-size:10px;padding:10px}
+ .web-pulse span{font-size:13px}
+ .environment-panther{background-size:100px 85px}
+}
+@media(prefers-reduced-motion:reduce){.chapter-environment canvas{display:none}.environment-spiderman::before{opacity:.11}}

@@ -1,0 +1,7 @@
+.git
+.github
+reports
+__pycache__
+node_modules
+.env*
+FILE-MANIFEST.json

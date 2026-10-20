@@ -1,0 +1,28 @@
+[
+  {
+    "number": 32,
+    "url": "https://github.com/TESIIITM/TES-Website/pull/32",
+    "title": "feat: redesign Enigma Society website around open-source collective",
+    "author": "jwalith4418-Mj",
+    "merged": true,
+    "merged_at": "2026-10-03T08:30:18Z",
+    "merge_commit_sha": "826243846cdf7f7aec2e37328e2003b43bdaf210",
+    "head_sha": "8ca1345fdae0c32911efdfba0acd5135268fc870",
+    "base_repository": "TESIIITM/TES-Website",
+    "changed_files": 66,
+    "checked_on": "2026-10-20"
+  },
+  {
+    "number": 35,
+    "url": "https://github.com/TESIIITM/TES-Website/pull/35",
+    "title": "fix: restore tab history and harden website security",
+    "author": "jwalith4418-Mj",
+    "merged": true,
+    "merged_at": "2026-10-10T11:41:29Z",
+    "merge_commit_sha": "85d09e5f2150a251eda56aaa0b5889633afc0d02",
+    "head_sha": "5d8148aa54d893f91f80e17fb5b99a58573c9494",
+    "base_repository": "TESIIITM/TES-Website",
+    "changed_files": 27,
+    "checked_on": "2026-10-20"
+  }
+]

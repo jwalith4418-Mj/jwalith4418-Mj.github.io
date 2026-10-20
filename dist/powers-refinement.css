@@ -1,0 +1,38 @@
+/* The uploaded Panther reference sets the palette and atmosphere. */
+body[data-active-hero="panther"]{--scene-accent:#ce89ff}
+body[data-active-hero="thor"]{--scene-accent:#a5e6ff}
+.about-section.content-section{background:#030305!important}
+.environment-panther{opacity:1;background:radial-gradient(ellipse at 88% 25%,#43087733,transparent 50%),#030305}
+.environment-panther::before{content:'';position:absolute;inset:0;background:url('/assets/marvel/panther-reference.jpg') right 7% top 70px/clamp(420px,48vw,740px) auto no-repeat;opacity:.26;mask-image:linear-gradient(180deg,transparent,#000 8%,#000 54%,transparent 88%);pointer-events:none}
+.environment-panther::after{content:'';position:absolute;inset:0;background:url('/assets/marvel/vibranium-veins.svg') center top/1600px 1100px repeat-y;opacity:.35;mask-image:linear-gradient(90deg,#000,transparent 43%,#000 80%);pointer-events:none}
+.environment-panther canvas,.environment-thor canvas{z-index:1}
+.about-reveal h2 em,.about-reveal>div:first-child>.eyebrow,.about-intro h2 em,.about-intro .eyebrow,.about-links .text-link{color:#ca8dff}
+.about-reveal>div:first-child>p:last-child,.about-intro-copy,.about-body>p{color:#b6afc4}
+.about-body,.education-cards article,.milestones{background:#0c0913e0;border-color:#a55ee32e;box-shadow:0 12px 40px #0003}
+.education-cards article:hover{border-color:#b277e870;background:#100b1c}
+.about-facts,.milestones article+article{border-color:#a55ee327}
+.about-facts strong,.education-cards .mono,.education-status,.milestones .mono,.milestone-heading .eyebrow{color:#ca8dff}
+.about-links .pill-link{background:#752daf;border-color:#b16de3}
+.about-links .pill-link:hover{background:#a75edb;color:#fff}
+.art-panther{--power:#ba76ff}
+.art-panther .power-ring{border:0;background:radial-gradient(ellipse,#7133a31a,transparent 66%)}
+.art-panther .power-ring::after{border-color:#af67ec15}
+.exposure-section.content-section{background:radial-gradient(ellipse at 80% 0,#30548277,transparent 40%),radial-gradient(ellipse at 73% 29%,#a58b4430,transparent 42%),linear-gradient(155deg,#060a14,#111b32 40%,#070c18)!important}
+.environment-thor{background:radial-gradient(ellipse at 78% 32%,#4786c621,transparent 50%)}
+.environment-thor::before{background:url('/assets/marvel/asgard-horizon.svg') center 30px/1600px 750px no-repeat,url('/assets/marvel/storm-clouds.svg') center top/1800px 900px repeat-y;opacity:.85;mask-image:linear-gradient(180deg,#000, #000 24%,#0007 50%,transparent 75%)}
+.environment-thor::after{background:linear-gradient(90deg,#05091477,transparent 64%),linear-gradient(180deg,transparent 28%,#060b18b3 70%);opacity:1}
+.art-thor .power-ring{inset:8% 0 5%;border:0;background:radial-gradient(ellipse,#82c7ff1a,transparent 68%)}
+.art-thor .hero-figure img{filter:drop-shadow(0 22px 28px #000a) drop-shadow(0 0 20px #72baff35)}
+.exposure-section .section-intro h2 em,.exposure-section .section-intro>div:first-child>.eyebrow{color:#b2e9ff}
+.exposure-section .section-intro>div:first-child>p:last-child{color:#bdc6d9}
+.exposure-section .program-card,.exposure-section .experience-card,.exposure-section .credential-card{background:#0b1426e6;border-color:#8ca7cb33}
+.exposure-section .program-card{border-top-color:#c2ab6870}
+.exposure-section .institution-mark,.exposure-section .credential-issuer{color:#b2e9ff}
+.reading-mode .about-section,.reduced-motion .about-section{background:#030305!important}
+.reading-mode .environment-panther,.reduced-motion .environment-panther{opacity:.4}
+.reading-mode .environment-thor::before,.reduced-motion .environment-thor::before{opacity:.3}
+@media(max-width:760px){
+ .environment-panther::before{background-position:center 95px;background-size:520px auto;opacity:.17}
+ .environment-panther::after{background-size:950px 1000px;opacity:.2}
+ .environment-thor::before{background-size:1050px 650px,1000px 800px;background-position:55% 200px,center top;opacity:.6}
+}

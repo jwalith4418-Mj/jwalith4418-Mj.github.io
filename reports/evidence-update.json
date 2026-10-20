@@ -1,0 +1,22 @@
+[
+  {
+    "theme": "marvel",
+    "lcp": 288,
+    "resources": 31,
+    "resourceBytes": 841466,
+    "longTasks": 1,
+    "dom": 1331,
+    "idleTaskMs": 2.4480000000000057,
+    "idleLayouts": 0
+  },
+  {
+    "theme": "panda",
+    "lcp": 988,
+    "resources": 26,
+    "resourceBytes": 937117,
+    "longTasks": 2,
+    "dom": 2060,
+    "idleTaskMs": 1.5579999999997263,
+    "idleLayouts": 0
+  }
+]

@@ -1,0 +1,84 @@
+/* Programs lead; credentials read as a ledger; experience follows a timeline. */
+.exposure-section .learning-toolbar{margin:18px 0 46px;padding:0 0 18px;border-bottom:1px solid #52617466;gap:18px}
+.exposure-section .learning-filters{gap:6px 22px}
+.exposure-section .learning-filters button{min-height:44px;padding:10px 0;border:0;border-bottom:2px solid transparent;border-radius:0;background:none;color:#b9c5d3;font:12px/1.5 var(--sans)}
+.exposure-section .learning-filters button.active{color:#eff2f5;background:none;border-color:#e4bc7d}
+.exposure-section .learning-filters button:hover:not(.active){color:#eff2f5;background:none;border-color:#65778f}
+.exposure-section .learning-filters button:focus-visible,.exposure-section summary:focus-visible{outline:2px solid #e4bc7d;outline-offset:5px}
+.exposure-section .learning-filters span{color:#a8b8ca;font-size:10px}
+.exposure-section #learning-count{font:10px/1.6 var(--mono);color:#a8b8ca}
+.exposure-section .learning-group{margin-bottom:54px}
+.exposure-section .learning-group-heading{margin-bottom:22px;align-items:baseline}
+.exposure-section .learning-group-heading h3{font:500 clamp(24px,2.1vw,30px)/1.2 var(--sans);letter-spacing:-.035em;color:#eff2f5}
+.exposure-section .learning-group-heading .mono{font:10px/1.6 var(--mono);letter-spacing:.06em;color:#a8b8ca}
+.exposure-section .program-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.exposure-section .program-card{--program-accent:#e4bc7d;min-width:0;padding:25px 28px 20px;background:#191d25;border:0;border-top:2px solid var(--program-accent);border-radius:3px;box-shadow:none}
+.exposure-section .program-card[data-program="gci"]{--program-accent:#b6d2ec;background:#14202c}
+.exposure-section .program-card-top{margin-bottom:22px;align-items:baseline;gap:16px}
+.exposure-section .institution-mark{width:auto;height:auto;display:inline;font:11px/1.5 var(--mono);color:var(--program-accent);background:none;border:0;border-radius:0}
+.exposure-section .record-status{display:inline-block;padding:0;border:0;border-radius:0;background:none;color:#bbc8d7;font:12px/1.6 var(--sans)}
+.exposure-section .program-card>.eyebrow{font:11px/1.5 var(--mono);color:var(--program-accent);letter-spacing:.07em;margin:0 0 11px}
+.exposure-section .program-card>h3{font:500 clamp(32px,3vw,42px)/1.13 var(--sans);color:#eff2f5;letter-spacing:-.045em;margin:0 0 16px;overflow-wrap:anywhere}
+.exposure-section .program-description{font:14px/1.8 var(--sans);color:#bbc8d7;margin:0;max-width:50ch}
+.exposure-section .program-card details{margin-top:24px;border-top:1px solid #7f91a438}
+.exposure-section .program-card summary{padding:14px 0 0;min-height:44px;color:var(--program-accent);font:12px/1.6 var(--sans)}
+.exposure-section .record-detail{font:14px/1.8 var(--sans);color:#bbc8d7}
+.exposure-section .record-detail p{margin:0 0 12px}
+.exposure-section .record-detail p:last-child{margin-bottom:0}
+.exposure-section .credential-grid{display:block;border-top:1px solid #52617466}
+.exposure-section .credential-card{border:0;border-bottom:1px solid #52617466;border-radius:0;background:#111a25;box-shadow:none;transition:background .2s}
+.exposure-section .credential-card:hover,.exposure-section .credential-card[open]{background:#172333}
+.exposure-section .credential-card>summary{display:grid;grid-template-columns:200px minmax(0,1fr) 44px;align-items:center;gap:20px;padding:23px 22px;min-height:100px}
+.exposure-section .credential-issuer{font:11px/1.5 var(--mono);letter-spacing:.03em;color:#b6d2ec;overflow-wrap:anywhere}
+.exposure-section .credential-issuer small{font:10px/1.6 var(--mono);color:#a8b8ca;margin-top:7px}
+.exposure-section .credential-title{font:500 clamp(17px,1.5vw,22px)/1.4 var(--sans);letter-spacing:-.025em;color:#eff2f5;overflow-wrap:anywhere}
+.exposure-section .credential-open{position:static;display:grid;place-items:center;width:44px;height:44px;color:#e4bc7d;font:22px/1 var(--sans);transition:transform .2s}
+.exposure-section .credential-card>.record-detail{padding:0 86px 25px 242px;max-width:none}
+.exposure-section .experience-grid{display:block;border-top:1px solid #52617466}
+.exposure-section .experience-card{display:grid;grid-template-columns:180px minmax(0,1fr);gap:0;padding:29px 0;border:0;border-bottom:1px solid #52617466;border-radius:0;background:none;box-shadow:none;min-width:0}
+.experience-date{padding:5px 25px 0 0}
+.exposure-section .experience-date .record-status{font:11px/1.7 var(--mono);color:#b6d2ec}
+.experience-body{position:relative;border-left:1px solid #61708677;padding:0 0 0 32px;min-width:0}
+.experience-body::before{content:'';position:absolute;left:-3.5px;top:10px;width:6px;height:6px;border-radius:50%;background:#e4bc7d}
+.exposure-section .experience-body>h3{margin:0 0 10px;font:500 clamp(23px,2vw,29px)/1.25 var(--sans);letter-spacing:-.03em;color:#eff2f5;overflow-wrap:anywhere}
+.exposure-section .experience-body>.experience-organization{font:11px/1.6 var(--mono);color:#e4bc7d;margin:0 0 14px}
+.exposure-section .experience-body>p:not(.experience-organization){font:14px/1.8 var(--sans);color:#bbc8d7;margin:0 0 18px;max-width:70ch}
+.exposure-section .experience-card details{margin:0;border:0}
+.exposure-section .experience-card summary{min-height:44px;padding:8px 0;font:12px/1.6 var(--sans);color:#b6d2ec;justify-content:flex-start;gap:18px}
+.exposure-section .experience-card .record-detail{max-width:70ch;padding-top:8px}
+.exposure-section summary>span[aria-hidden]{flex:none}
+.exposure-section .exposure-footer{border-color:#52617466;padding-top:24px;padding-bottom:80px;color:#b9c5d3}
+.exposure-section .exposure-footer p,.exposure-section .exposure-footer a{font-size:12px}
+body[data-active-hero="thor"] .hero-dock{padding:4px 6px;gap:3px}
+body[data-active-hero="thor"] .hero-dock a{padding:10px 12px}
+.reading-mode .exposure-section .credential-card,.reduced-motion .exposure-section .credential-card{transition:none}
+@media(max-width:900px){
+ .exposure-section .credential-card>summary{grid-template-columns:160px minmax(0,1fr) 44px;gap:16px;padding:20px 16px}
+ .exposure-section .credential-card>.record-detail{padding:0 76px 24px 192px}
+ .exposure-section .experience-card{grid-template-columns:145px minmax(0,1fr)}
+ .experience-body{padding-left:26px}
+}
+@media(max-width:760px){
+ .exposure-section .learning-toolbar{margin-bottom:32px;gap:13px}
+ .exposure-section .learning-filters{gap:5px 18px}
+ .exposure-section .learning-filters button{font-size:11px}
+ .exposure-section .learning-group{margin-bottom:38px}
+ .exposure-section .learning-group-heading{margin-bottom:17px}
+ .exposure-section .learning-group-heading .mono{font-size:9px;margin-top:9px}
+ .exposure-section .program-grid{grid-template-columns:1fr;gap:16px}
+ .exposure-section .program-card{padding:22px 23px 19px}
+ .exposure-section .program-card-top{margin-bottom:19px}
+ .exposure-section .record-status{font-size:11px}
+ .exposure-section .credential-card>summary{grid-template-columns:minmax(0,1fr) 44px;gap:10px 14px;min-height:0;padding:20px 16px}
+ .exposure-section .credential-issuer{grid-column:1;grid-row:1;font-size:10px}
+ .exposure-section .credential-title{grid-column:1;grid-row:2;font-size:18px}
+ .exposure-section .credential-open{grid-column:2;grid-row:1/3;align-self:center}
+ .exposure-section .credential-card>.record-detail{padding:0 16px 23px}
+ .exposure-section .experience-card{grid-template-columns:1fr;padding:23px 0;gap:17px}
+ .experience-date{padding:0 0 0 22px}
+ .experience-body{padding-left:22px;margin-left:3px}
+ .exposure-section .experience-body>h3{font-size:24px}
+ .exposure-section .exposure-footer{padding-bottom:105px}
+ body[data-active-hero="thor"] .hero-dock a{padding:9px 5px}
+}
+@media(prefers-reduced-motion:reduce){.exposure-section .credential-card,.exposure-section .credential-open{transition:none}}
